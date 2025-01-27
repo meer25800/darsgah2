@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import requests
 from PIL import Image
 import base64
 import os
@@ -252,9 +253,24 @@ elif choice == "Student Portal":
 
             st.subheader("Syllabus")
             syllabus_link = syllabus_links.get(student_info["Class"], None)
+
             if syllabus_link:
-                st.write(f"Download the syllabus for {student_info['Class']}:")
-                st.markdown(f"[Download Syllabus]({syllabus_link})",unsafe_allow_html=True)
+                if syllabus_link.startswith("http"):  # If the link is a raw URL
+                    try:
+                        response = requests.get(syllabus_link)
+                        if response.status_code == 200:
+                            st.download_button(label=f"Download Syllabus for {student_info['Class']}",data=response.content,file_name=f"Syllabus_{student_info['Class']}.pdf",mime="application/pdf")
+                        else:
+                            st.error(f"Failed to fetch the syllabus for {student_info['Class']}!")
+                    except Exception as e:
+                        st.error(f"An error occurred while fetching the syllabus: {str(e)}")
+                else:  # If it's a local file link
+                    try:
+                        with open(syllabus_link, "rb") as file:
+                            syllabus_data = file.read()
+                        st.download_button(label=f"Download Syllabus for {student_info['Class']}", data=syllabus_data,file_name=f"Syllabus_{student_info['Class']}.pdf",mime="application/pdf")
+                    except FileNotFoundError:
+                        st.error(f"Syllabus file for {student_info['Class']} not found!")
             else:
                 st.write("Syllabus not available.")
         else:
