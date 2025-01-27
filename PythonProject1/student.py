@@ -96,17 +96,16 @@ if "students" not in st.session_state:
         ]
     )
 
-if "syllabus" not in st.session_state:
-    st.session_state["syllabus"] = {
-        "Class 1": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 2": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 3": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 4": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 5": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 6": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 7": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
-        "Class 8": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf"
-    }
+syllabus_links = {
+    "Class 1": "./Syllabus/Class_1.pdf",  # Relative path for local files
+    "Class 2": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
+    "Class 3": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
+    "Class 4": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
+    "Class 5": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
+    "Class 6": "https://drive.google.com/uc?id=1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-&export=download",
+    "Class 7": "https://drive.google.com/uc?id=1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-&export=download",
+    "Class 8": "./Syllabus/Class_8.pdf",
+}
 
 # Home Page
 st.markdown("""
@@ -254,16 +253,26 @@ elif choice == "Student Portal":
           
 
             st.subheader("Syllabus")
-            syllabus_file = st.session_state["syllabus"].get(student_info['Class'], None)
-            if syllabus_file:
-                st.write(f"Download the syllabus for {student_info['Class']}:")
-                st.download_button(label="Download Syllabus",
-                                   data=open(syllabus_file, "rb").read(),
-                                   file_name=syllabus_file)
+            syllabus_link = syllabus_links.get(student_info['Class'].strip().capitalize(), None)
+
+            if syllabus_link:
+                if syllabus_link.startswith("./"):  # Relative local file path
+                    try:
+                        with open(syllabus_link, "rb") as file:
+                            syllabus_data = file.read()
+                        st.download_button(
+                            label=f"Download Syllabus for {student_info['Class']}",
+                            data=syllabus_data,
+                            file_name=f"Syllabus_{student_info['Class']}.pdf",
+                            mime="application/pdf"
+                        )
+                    except FileNotFoundError:
+                        st.error(f"Syllabus file for {student_info['Class']} not found!")
+                else:  # Web link
+                    st.write(f"Download the syllabus for {student_info['Class']}:")
+                    st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
             else:
                 st.write("Syllabus not available.")
-        else:
-            st.error("Student ID not found. Please try again.")
 
 
 
