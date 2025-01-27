@@ -97,14 +97,14 @@ if "students" not in st.session_state:
     )
 
 syllabus_links = {
-    "Class 1": "./PythonProject1/1-10_merged.pdf",
-    "Class 2": "./PythonProject1/1-10_merged.pdf",
-    "Class 3": "./PythonProject1/1-10_merged.pdf",
-    "Class 4": "./PythonProject1/1-10_merged.pdf",
-    "Class 5": "./PythonProject1/1-10_merged.pdf",
-    "Class 6": "./PythonProject1/1-10_merged.pdf",
-    "Class 7": "./PythonProject1/1-10_merged.pdf",
-    "Class 8": "./PythonProject1/1-10_merged.pdf",
+    "Class 1": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 2": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 3": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 4": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 5": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 6": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 7": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 8": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
 }
 
 # Home Page
