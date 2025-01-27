@@ -285,8 +285,8 @@ elif choice == "Student Portal":
                         st.error(f"An error occurred while fetching the syllabus: {str(e)}")
                 else:
                     st.error("Syllabus not available for the selected class.")
-            else:
-                st.error("Student ID not found. Please try again.")
+        else:
+            st.error("Student ID not found. Please try again.")
             # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
