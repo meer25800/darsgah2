@@ -98,14 +98,14 @@ if "students" not in st.session_state:
 
 if "syllabus" not in st.session_state:
     st.session_state["syllabus"] = {
-        "Class 1": "1-10_merged.pdf",
-        "Class 2": "1-10_merged.pdf",
-        "Class 3": "1-10_merged.pdf",
-        "Class 4": "Syllabus_Class_4.pdf",
-        "Class 5": "Syllabus_Class_5.pdf",
-        "Class 6": "Syllabus_Class_6.pdf",
-        "Class 7": "Syllabus_Class_7.pdf",
-        "Class 8": "Syllabus_Class_8.pdf"
+        "Class 1": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 2": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 3": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 4": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 5": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 6": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 7": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf",
+        "Class 8": "/mount/src/darsgah2/PythonProject1/1-10_merged.pdf"
     }
 
 # Home Page
