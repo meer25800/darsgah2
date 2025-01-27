@@ -351,14 +351,14 @@ elif choice == "Syllabus":
 
     # Mapping of syllabus images for each class
     syllabus_images = {
-        "1st Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "2nd Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "3rd Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "4th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "5th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "6th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "7th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "8th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "1st Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "2nd Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "3rd Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "4th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "5th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "6th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "7th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "8th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
     }
 
     syllabus_path = syllabus_images.get(selected_class)
