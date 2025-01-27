@@ -38,7 +38,7 @@ st.markdown("""
     }
     .front-title {
         font-size: 40px;
-        color: #0040b9;
+        color:#a800b9;
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
         margin-bottom: 20px;
