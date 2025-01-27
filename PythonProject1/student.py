@@ -361,7 +361,8 @@ elif choice == "Syllabus":
 
     if syllabus_path and os.path.exists(syllabus_path):
         syllabus_image = Image.open(syllabus_path)
-        st.image(syllabus_image, caption=f"{selected_class} Syllabus", use_container_width=True)
+        #st.image(syllabus_image, caption=f"{selected_class} Syllabus", use_container_width=True)
+        st.image("syllabus_image", width=600)
         
         # Create a download button for the syllabus
         with open(syllabus_path, "rb") as img_file:
