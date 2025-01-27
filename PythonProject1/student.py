@@ -341,7 +341,7 @@ elif choice == "Syllabus":
     st.header("Class Syllabus")
     
     # Class options
-    classes = [f"Class {i}" for i in range(1, 9)]
+    classes = [f"{i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} Class" for i in range(1, 9)]
     selected_class = st.selectbox("Select Class", classes)
 
     # Mapping of syllabus images for each class
