@@ -97,14 +97,14 @@ if "students" not in st.session_state:
     )
 
 syllabus_links = {
-    "Class 1": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
+    "Class 1": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
     "Class 2": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
     "Class 3": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
     "Class 4": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
     "Class 5": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
     "Class 6": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
     "Class 7": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
-    "Class 8": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
+    "Class 8": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
 }
 
 # Home Page
@@ -276,7 +276,21 @@ elif choice == "Admin Portal":
                 name = st.text_input("Full Name")
                 age = st.number_input("Age", min_value=5, max_value=100, step=1)
                 gender = st.selectbox("Gender", ["Male", "Female"])
-                student_class = st.selectbox("Class", [f" {i} TH" for i in range(1, 9)])
+               # student_class = st.selectbox("Class", [f" {i} TH" for i in range(1, 9)])
+                class_labels = [
+    "First" if i == 1 else 
+    "2nd" if i == 2 else 
+    f"{i}th" 
+    for i in range(1, 9)
+]
+
+# Display the selectbox
+student_class = st.selectbox("Class", class_labels)
+
+# Display the selected class
+st.write(f"Class: {student_class}")
+
+                
                 contact = st.text_input("Contact Number")
 
                 # Initialize an empty dictionary for marks
