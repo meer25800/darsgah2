@@ -251,43 +251,43 @@ syllabus_links = {
                 "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
                 "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
             }
-            student_info = {"Class": "Class 1"}  # Replace with the actual student class dynamically
+                student_info = {"Class": "Class 1"}  # Replace with the actual student class dynamically
 
             # Fetch the syllabus link for the given class
-            syllabus_link = syllabus_links.get(student_info["Class"])
+                syllabus_link = syllabus_links.get(student_info["Class"])
 
-            if syllabus_link:
-                try:
-                    if syllabus_link.startswith("http"):  # If the link is a raw URL
-                        response = requests.get(syllabus_link)
-                        if response.status_code == 200:
-                            st.download_button(
-                                label=f"Download Syllabus for {student_info['Class']}",
-                                data=response.content,
-                                file_name=f"Syllabus_{student_info['Class']}.pdf",
-                                mime="application/pdf"
-                            )
-                        else:
-                            st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
-                    else:  # If it's a local file link
-                        if os.path.exists(syllabus_link):
-                            with open(syllabus_link, "rb") as file:
-                                syllabus_data = file.read()
-                            st.download_button(
-                                label=f"Download Syllabus for {student_info['Class']}",
-                                data=syllabus_data,
-                                file_name=f"Syllabus_{student_info['Class']}.pdf",
-                                mime="application/pdf"
-                            )
-                        else:
-                            st.error(f"Syllabus file not found: {syllabus_link}")
-                except Exception as e:
-                    st.error(f"An error occurred while fetching the syllabus: {str(e)}")
+                if syllabus_link:
+                    try:
+                        if syllabus_link.startswith("http"):  # If the link is a raw URL
+                            response = requests.get(syllabus_link)
+                            if response.status_code == 200:
+                                st.download_button(
+                                    label=f"Download Syllabus for {student_info['Class']}",
+                                    data=response.content,
+                                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                                    mime="application/pdf"
+                                )
+                            else:
+                                st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
+                        else:  # If it's a local file link
+                            if os.path.exists(syllabus_link):
+                                with open(syllabus_link, "rb") as file:
+                                    syllabus_data = file.read()
+                                st.download_button(
+                                    label=f"Download Syllabus for {student_info['Class']}",
+                                    data=syllabus_data,
+                                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                                    mime="application/pdf"
+                                )
+                            else:
+                                st.error(f"Syllabus file not found: {syllabus_link}")
+                    except Exception as e:
+                        st.error(f"An error occurred while fetching the syllabus: {str(e)}")
+                else:
+                    st.error("Syllabus not available for the selected class.")
             else:
-                st.error("Syllabus not available for the selected class.")
-        else:
-            st.error("Student ID not found. Please try again.")
-        # Admin Portal
+                st.error("Student ID not found. Please try again.")
+            # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
     st.header("Admin Portal")
