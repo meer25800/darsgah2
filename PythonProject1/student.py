@@ -91,6 +91,7 @@ st.markdown("""
         text-align: center;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
         margin-bottom: 20px;
+        margin-left:30px
     }
     .front-description {
         font-size: 20px;
