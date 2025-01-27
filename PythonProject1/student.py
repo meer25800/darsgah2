@@ -19,8 +19,35 @@ if not os.path.exists(logo_path):
 logo_base64 = get_image_base64(logo_path)
 
 # Title page
+
+
+# Set page configuration
 st.set_page_config(page_title="Darsgah Taleemul Quran Wal Hadith Kongamdara", page_icon="📘")
-st.title("درسگاہ  تعلیم  القرآن  والحدیث  کانگمڈا")
+
+# Inject custom CSS to handle centering properly
+st.markdown("""
+    <style>
+    .front-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .front-title {
+        font-size: 55px;
+        color: #80281e;
+        font-weight: bold;
+        direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
+        margin-bottom: 20px;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+# Use HTML to ensure proper centering
+st.markdown('<div class="front-title-container"><div class="front-title">درسگاہ تعلیم القرآن والحدیث کانگمڈا</div></div>', unsafe_allow_html=True)
 
 # Navigation menu
 menu = ["Home", "Student Portal", "Admin Portal", "Contact"]
