@@ -277,18 +277,13 @@ elif choice == "Admin Portal":
                 age = st.number_input("Age", min_value=5, max_value=100, step=1)
                 gender = st.selectbox("Gender", ["Male", "Female"])
                # student_class = st.selectbox("Class", [f" {i} TH" for i in range(1, 9)])
-                class_labels = [
-    "First" if i == 1 else 
-    "2nd" if i == 2 else 
-    f"{i}th" 
-    for i in range(1, 9)
-]
+                class_labels = ["First" if i == 1 else "2nd" if i == 2 else  f"{i}th"  for i in range(1, 9)]
 
 # Display the selectbox
-student_class = st.selectbox("Class", class_labels)
+                student_class = st.selectbox("Class", class_labels)
 
 # Display the selected class
-st.write(f"Class: {student_class}")
+                st.write(f"Class: {student_class}")
 
                 
                 contact = st.text_input("Contact Number")
