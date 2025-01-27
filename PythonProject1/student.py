@@ -106,6 +106,7 @@ syllabus_links = {
     "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
     "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
 }
+
 # Home Page
 st.markdown("""
 <style>
@@ -253,7 +254,7 @@ elif choice == "Student Portal":
             syllabus_link = syllabus_links.get(student_info["Class"], None)
             if syllabus_link:
                 st.write(f"Download the syllabus for {student_info['Class']}:")
-                st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
+                st.markdown(f"[Download Syllabus]({syllabus_link})",unsafe_allow_html=True)
             else:
                 st.write("Syllabus not available.")
         else:
