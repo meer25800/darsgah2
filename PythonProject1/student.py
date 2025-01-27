@@ -97,16 +97,15 @@ if "students" not in st.session_state:
     )
 
 syllabus_links = {
-    "Class 1": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 2": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 3": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 4": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 5": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 6": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 7": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-    "Class 8": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
+    "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+    "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
 }
-
 # Home Page
 st.markdown("""
 <style>
@@ -250,26 +249,16 @@ elif choice == "Student Portal":
             else:
                 st.write("No marks available yet.")
 
-          
- # --- Syllabus Section ---
-    if syllabus_link:
-        if syllabus_link.startswith("./"):  # Local file path
-            try:
-                with open(syllabus_link, "rb") as file:
-                    syllabus_data = file.read()
-                st.download_button(
-                    label=f"Download Syllabus for {selected_class}",
-                    data=syllabus_data,
-                    file_name=f"Syllabus_{selected_class}.pdf",
-                    mime="application/pdf"
-                )
-            except FileNotFoundError:
-                st.error(f"Syllabus file for {selected_class} not found!")
-        else:  # Web link
-            st.write(f"Download the syllabus for {selected_class}:")
-            st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
-    else:
-        st.write("Syllabus not available.")
+            st.subheader("Syllabus")
+            syllabus_link = syllabus_links.get(student_info['Class'], None)
+
+            if syllabus_link:
+                st.write(f"Download the syllabus for {student_info['Class']}:")
+                st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
+            else:
+                st.write("Syllabus not available.")
+        else:
+            st.error("Student ID not found. Please try again.")
         # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
