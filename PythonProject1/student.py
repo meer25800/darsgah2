@@ -337,6 +337,8 @@ elif choice == "Admin Portal":
                     st.error(f"Error processing file: {e}")
     else:
         st.error("Incorrect password.")
+
+
 elif choice == "Syllabus":
     st.header("Class Syllabus")
     
@@ -344,18 +346,19 @@ elif choice == "Syllabus":
     classes = [f"{i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} Class" for i in range(1, 9)]
     selected_class = st.selectbox("Select Class", classes)
 
+    # Directory of the script (update this if paths are different)
+    base_path = os.path.dirname(__file__)
+
     # Mapping of syllabus images for each class
     syllabus_images = {
-        "Class 1st": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this to a valid local path
-        "Class 2nd": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 2rd": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 4th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 5th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",# Update this
-        "Class 6th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 7th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 8th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-      
-        # Add paths for other classes...
+        "1st Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "2nd Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "3rd Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "4th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "5th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "6th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "7th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "8th Class": os.path.join(base_path, "PythonProject1/Screenshot__193_-removebg-preview.png"),
     }
 
     syllabus_path = syllabus_images.get(selected_class)
@@ -382,6 +385,7 @@ elif choice == "Syllabus":
             st.error(f"File not found: {syllabus_path}")
     else:
         st.error("Syllabus not available for the selected class.")
+
 
 elif choice == "Contact":
     # Custom CSS for styling
