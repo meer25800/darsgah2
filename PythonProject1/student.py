@@ -258,14 +258,14 @@ elif choice == "Student Portal":
                 try:
                     if syllabus_link.startswith("http"):  # If the link is a raw URL
                         response = requests.get(syllabus_link)
-                            if response.status_code == 200:
+                        if response.status_code == 200:
                                 st.download_button(
                                     label=f"Download Syllabus for {student_info['Class']}",
                                     data=response.content,
                                     file_name=f"Syllabus_{student_info['Class']}.pdf",
                                     mime="application/pdf")
-                            else:
-                                st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
+                        else:
+                            st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
                     else:  # If it's a local file link
                         if os.path.exists(syllabus_link):
                             with open(syllabus_link, "rb") as file:
