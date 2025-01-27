@@ -346,8 +346,15 @@ elif choice == "Syllabus":
 
     # Mapping of syllabus images for each class
     syllabus_images = {
-        "1st Class": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this to a valid local path
-        "2nd Class": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this
+        " Class 1st": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this to a valid local path
+        "Class 2nd": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 2rd": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 4th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 5th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",# Update this
+        "Class 6th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 7th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 8th": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+      
         # Add paths for other classes...
     }
 
@@ -360,7 +367,7 @@ elif choice == "Syllabus":
         
         if os.path.exists(syllabus_path):
             syllabus_image = Image.open(syllabus_path)
-            st.image(syllabus_image, caption=f"{selected_class} Syllabus", width=800)
+            st.image(syllabus_image, caption=f"{selected_class} Syllabus", width=700)
             
             # Create a download button for the syllabus
             with open(syllabus_path, "rb") as img_file:
