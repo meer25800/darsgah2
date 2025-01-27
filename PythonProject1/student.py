@@ -252,28 +252,24 @@ elif choice == "Student Portal":
 
           
  # --- Syllabus Section ---
-    st.subheader("Syllabus")
-    syllabus_link = syllabus_links.get(student_info['Class'].strip().capitalize(), None)
-
     if syllabus_link:
-        if syllabus_link.startswith("./"):  # Relative local file path
+        if syllabus_link.startswith("./"):  # Local file path
             try:
                 with open(syllabus_link, "rb") as file:
                     syllabus_data = file.read()
                 st.download_button(
-                    label=f"Download Syllabus for {student_info['Class']}",
+                    label=f"Download Syllabus for {selected_class}",
                     data=syllabus_data,
-                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                    file_name=f"Syllabus_{selected_class}.pdf",
                     mime="application/pdf"
                 )
             except FileNotFoundError:
-                st.error(f"Syllabus file for {student_info['Class']} not found!")
+                st.error(f"Syllabus file for {selected_class} not found!")
         else:  # Web link
-            st.write(f"Download the syllabus for {student_info['Class']}:")
+            st.write(f"Download the syllabus for {selected_class}:")
             st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
     else:
         st.write("Syllabus not available.")
-
         # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
