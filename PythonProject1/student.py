@@ -97,7 +97,16 @@ if "students" not in st.session_state:
         ]
     )
 
-
+syllabus_links = {
+                "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+            }
 
 # Home Page
 st.markdown("""
@@ -241,16 +250,7 @@ elif choice == "Student Portal":
                                    file_name=f"Result_{student_info['Name']}.txt")
             else:
                 st.write("No marks available yet.")
-syllabus_links = {
-                "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-            }
+
                 student_info = {"Class": "Class 1"}  # Replace with the actual student class dynamically
 
             # Fetch the syllabus link for the given class
