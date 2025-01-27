@@ -365,8 +365,8 @@ elif choice == "Syllabus":
 
     if syllabus_path:
         # Debugging output
-        st.write(f"Path to syllabus: {syllabus_path}")
-        st.write(f"File exists: {os.path.exists(syllabus_path)}")
+        #st.write(f"Path to syllabus: {syllabus_path}")
+        #st.write(f"File exists: {os.path.exists(syllabus_path)}")
         
         if os.path.exists(syllabus_path):
             syllabus_image = Image.open(syllabus_path)
