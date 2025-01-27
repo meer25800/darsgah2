@@ -94,7 +94,7 @@ st.markdown("""
     .front-description {
         font-size: 20px;
         color: #1e8025;
-        text-align: center;
+        text-align: right;
         margin-bottom: 40px;
     }
 
