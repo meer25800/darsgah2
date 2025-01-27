@@ -89,12 +89,14 @@ st.markdown("""
         color: #80281e;
         font-weight: bold;
         text-align: center;
+        direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
         margin-bottom: 20px;
     }
     .front-description {
         font-size: 20px;
         color: #1e8025;
-        text-align: right;
+        text-align: center;
+       
         margin-bottom: 40px;
     }
 
