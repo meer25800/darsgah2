@@ -51,7 +51,8 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
-menu = ["Home", "Student Portal", "Admin Portal", "Contact"]
+menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact"]
+
 choice = st.sidebar.selectbox("Search Here", menu)
 
 # Data storage (mock database using pandas DataFrame)
@@ -97,16 +98,7 @@ if "students" not in st.session_state:
         ]
     )
 
-syllabus_links = {
-                "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-            }
+
 
 # Home Page
 st.markdown("""
@@ -251,49 +243,7 @@ elif choice == "Student Portal":
             else:
                 st.write("No marks available yet.")
 
-                student_info = {"Class": "Class 1"}  # Replace with the actual student class dynamically
-                syllabus_links = {
-                "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-                "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
-            }
-            # Fetch the syllabus link for the given class
-                syllabus_link = syllabus_links.get(student_info["Class"])
                 
-                if syllabus_link:
-                    try:
-                        if syllabus_link.startswith("http"):  # If the link is a raw URL
-                            response = requests.get(syllabus_link)
-                            if response.status_code == 200:
-                                st.download_button(
-                                    label=f"Download Syllabus for {student_info['Class']}",
-                                    data=response.content,
-                                    file_name=f"Syllabus_{student_info['Class']}.pdf",
-                                    mime="application/pdf"
-                                )
-                            else:
-                                st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
-                        else:  # If it's a local file link
-                            if os.path.exists(syllabus_link):
-                                with open(syllabus_link, "rb") as file:
-                                    syllabus_data = file.read()
-                                st.download_button(
-                                    label=f"Download Syllabus for {student_info['Class']}",
-                                    data=syllabus_data,
-                                    file_name=f"Syllabus_{student_info['Class']}.pdf",
-                                    mime="application/pdf"
-                                )
-                            else:
-                                st.error(f"Syllabus file not found: {syllabus_link}")
-                    except Exception as e:
-                        st.error(f"An error occurred while fetching the syllabus: {str(e)}")
-                else:
-                    st.error("Syllabus not available for the selected class.")
         else:
             st.error("Student ID not found. Please try again.")
             # Admin Portal
@@ -387,6 +337,43 @@ elif choice == "Admin Portal":
                     st.error(f"Error processing file: {e}")
     else:
         st.error("Incorrect password.")
+elif choice == "Syllabus":
+    st.header("Class Syllabus")
+    
+    # Class options
+    classes = [f"Class {i}" for i in range(1, 9)]
+    selected_class = st.selectbox("Select Class", classes)
+
+    # Mapping of syllabus images for each class
+    syllabus_images = {
+        "Class 1": "",
+        "Class 2": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 3": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 4": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 5": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 6": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 7": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 8": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"
+    }
+
+    # Display syllabus image and download option
+    syllabus_path = syllabus_images.get(selected_class)
+
+    if syllabus_path and os.path.exists(syllabus_path):
+        syllabus_image = Image.open(syllabus_path)
+        st.image(syllabus_image, caption=f"{selected_class} Syllabus", use_column_width=True)
+        
+        # Create a download button for the syllabus
+        with open(syllabus_path, "rb") as img_file:
+            syllabus_data = img_file.read()
+            st.download_button(
+                label=f"Download {selected_class} Syllabus",
+                data=syllabus_data,
+                file_name=f"{selected_class}_Syllabus.png",
+                mime="image/png"
+            )
+    else:
+        st.error("Syllabus image not found for the selected class.")
 
 # Contact Page
 elif choice == "Contact":
