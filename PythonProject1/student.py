@@ -255,24 +255,33 @@ elif choice == "Student Portal":
             syllabus_link = syllabus_links.get(student_info["Class"], None)
 
             if syllabus_link:
-                if syllabus_link.startswith("http"):  # If the link is a raw URL
-                    try:
+                try:
+                    if syllabus_link.startswith("http"):  # If the link is a raw URL
                         response = requests.get(syllabus_link)
-                        if response.status_code == 200:
-                            st.download_button(label=f"Download Syllabus for {student_info['Class']}",data=response.content,file_name=f"Syllabus_{student_info['Class']}.pdf",mime="application/pdf")
+                            if response.status_code == 200:
+                                st.download_button(
+                                    label=f"Download Syllabus for {student_info['Class']}",
+                                    data=response.content,
+                                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                                    mime="application/pdf")
+                            else:
+                                st.error(f"Failed to fetch the syllabus! Status code: {response.status_code}")
+                    else:  # If it's a local file link
+                        if os.path.exists(syllabus_link):
+                            with open(syllabus_link, "rb") as file:
+                                syllabus_data = file.read()
+                            st.download_button(
+                                label=f"Download Syllabus for {student_info['Class']}",
+                                data=syllabus_data,
+                                file_name=f"Syllabus_{student_info['Class']}.pdf",
+                                mime="application/pdf")
                         else:
-                            st.error(f"Failed to fetch the syllabus for {student_info['Class']}!")
-                    except Exception as e:
-                        st.error(f"An error occurred while fetching the syllabus: {str(e)}")
-                else:  # If it's a local file link
-                    try:
-                        with open(syllabus_link, "rb") as file:
-                            syllabus_data = file.read()
-                        st.download_button(label=f"Download Syllabus for {student_info['Class']}", data=syllabus_data,file_name=f"Syllabus_{student_info['Class']}.pdf",mime="application/pdf")
-                    except FileNotFoundError:
-                        st.error(f"Syllabus file for {student_info['Class']} not found!")
+                            st.error(f"Syllabus file not found: {syllabus_link}")
+                except Exception as e:
+                    st.error(f"An error occurred while fetching the syllabus: {str(e)}")
             else:
                 st.write("Syllabus not available.")
+
         else:
             st.error("Student ID not found. Please try again.")
         # Admin Portal
