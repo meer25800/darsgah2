@@ -97,14 +97,14 @@ if "students" not in st.session_state:
     )
 
 syllabus_links = {
-    "Class 1": "./Syllabus/Class_1.pdf",  # Relative path for local files
-    "Class 2": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
-    "Class 3": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
-    "Class 4": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
-    "Class 5": "https://drive.google.com/uc?id=1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA&export=download",
-    "Class 6": "https://drive.google.com/uc?id=1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-&export=download",
-    "Class 7": "https://drive.google.com/uc?id=1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-&export=download",
-    "Class 8": "./Syllabus/Class_8.pdf",
+    "Class 1": "./PythonProject1/1-10_merged.pdf",
+    "Class 2": "./PythonProject1/1-10_merged.pdf",
+    "Class 3": "./PythonProject1/1-10_merged.pdf",
+    "Class 4": "./PythonProject1/1-10_merged.pdf",
+    "Class 5": "./PythonProject1/1-10_merged.pdf",
+    "Class 6": "./PythonProject1/1-10_merged.pdf",
+    "Class 7": "./PythonProject1/1-10_merged.pdf",
+    "Class 8": "./PythonProject1/1-10_merged.pdf",
 }
 
 # Home Page
@@ -251,30 +251,28 @@ elif choice == "Student Portal":
                 st.write("No marks available yet.")
 
           
+ # --- Syllabus Section ---
+    st.subheader("Syllabus")
+    syllabus_link = syllabus_links.get(student_info['Class'].strip().capitalize(), None)
 
-            st.subheader("Syllabus")
-            syllabus_link = syllabus_links.get(student_info['Class'].strip().capitalize(), None)
-
-            if syllabus_link:
-                if syllabus_link.startswith("./"):  # Relative local file path
-                    try:
-                        with open(syllabus_link, "rb") as file:
-                            syllabus_data = file.read()
-                        st.download_button(
-                            label=f"Download Syllabus for {student_info['Class']}",
-                            data=syllabus_data,
-                            file_name=f"Syllabus_{student_info['Class']}.pdf",
-                            mime="application/pdf"
-                        )
-                    except FileNotFoundError:
-                        st.error(f"Syllabus file for {student_info['Class']} not found!")
-                else:  # Web link
-                    st.write(f"Download the syllabus for {student_info['Class']}:")
-                    st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
-            else:
-                st.write("Syllabus not available.")
-
-
+    if syllabus_link:
+        if syllabus_link.startswith("./"):  # Relative local file path
+            try:
+                with open(syllabus_link, "rb") as file:
+                    syllabus_data = file.read()
+                st.download_button(
+                    label=f"Download Syllabus for {student_info['Class']}",
+                    data=syllabus_data,
+                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                    mime="application/pdf"
+                )
+            except FileNotFoundError:
+                st.error(f"Syllabus file for {student_info['Class']} not found!")
+        else:  # Web link
+            st.write(f"Download the syllabus for {student_info['Class']}:")
+            st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
+    else:
+        st.write("Syllabus not available.")
 
         # Admin Portal
 # Admin Portal
