@@ -62,7 +62,7 @@ if "students" not in st.session_state:
                 "Name": "Ahmed Khan",
                 "Age": 12,
                 "Gender": "Male",
-                "Class": "Class 6",
+                "Class": "6TH",
                 "Contact": "1234567890",
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 85, "Max": 100}, "Term 2": {"Obtained": 88, "Max": 100}},
@@ -80,7 +80,7 @@ if "students" not in st.session_state:
                 "Name": "Ayesha Siddiqui",
                 "Age": 14,
                 "Gender": "Female",
-                "Class": "Class 8",
+                "Class": "8TH",
                 "Contact": "9876543210",
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 88, "Max": 100}, "Term 2": {"Obtained": 85, "Max": 100}},
@@ -276,7 +276,7 @@ elif choice == "Admin Portal":
                 name = st.text_input("Full Name")
                 age = st.number_input("Age", min_value=5, max_value=100, step=1)
                 gender = st.selectbox("Gender", ["Male", "Female"])
-                student_class = st.selectbox("Class", [f"Class {i}" for i in range(1, 9)])
+                student_class = st.selectbox("Class", [f" {i} TH" for i in range(1, 9)])
                 contact = st.text_input("Contact Number")
 
                 # Initialize an empty dictionary for marks
