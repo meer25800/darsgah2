@@ -346,7 +346,7 @@ elif choice == "Syllabus":
 
     # Mapping of syllabus images for each class
     syllabus_images = {
-        "Class 1": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 1": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
         "Class 2": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 3": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 4": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
