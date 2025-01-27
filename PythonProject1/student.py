@@ -250,7 +250,7 @@ elif choice == "Student Portal":
             else:
                 st.write("No marks available yet.")
 
-            st.subheader("Syllabus")
+          """  st.subheader("Syllabus")
             syllabus_link = syllabus_links.get(student_info['Class'], None)
 
             if syllabus_link:
@@ -259,7 +259,26 @@ elif choice == "Student Portal":
             else:
                 st.write("Syllabus not available.")
         else:
-            st.error("Student ID not found. Please try again.")
+            st.error("Student ID not found. Please try again.")"""
+
+            st.subheader("Syllabus")
+        syllabus_link = syllabus_links.get(student_info['Class'], None)
+
+        if syllabus_link:
+            if syllabus_link.startswith("/mount"):  # If it's a local file path
+                with open(syllabus_link, "rb") as file:
+                    syllabus_data = file.read()
+                st.download_button(
+                    label=f"Download Syllabus for {student_info['Class']}",
+                    data=syllabus_data,
+                    file_name=f"Syllabus_{student_info['Class']}.pdf",
+                    mime="application/pdf"  )
+            else:  # If it's a web link
+                st.write(f"Download the syllabus for {student_info['Class']}:")
+                st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
+        else:
+            st.write("Syllabus not available.")
+
 
         # Admin Portal
 # Admin Portal
