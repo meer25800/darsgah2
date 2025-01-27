@@ -346,37 +346,36 @@ elif choice == "Syllabus":
 
     # Mapping of syllabus images for each class
     syllabus_images = {
-        "Class 1": "https://github.com/meer25800/darsgah2/blob/main/PythonProject1/1-10_merged.pdf",
-        "Class 2": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 3": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 4": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 5": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 6": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 7": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 8": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"
+        "1st Class": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this to a valid local path
+        "2nd Class": "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png",  # Update this
+        # Add paths for other classes...
     }
 
-    # Display syllabus image and download option
     syllabus_path = syllabus_images.get(selected_class)
 
-    if syllabus_path and os.path.exists(syllabus_path):
-        syllabus_image = Image.open(syllabus_path)
-        st.image(syllabus_image, caption=f"{selected_class} Syllabus", width=800)
+    if syllabus_path:
+        # Debugging output
+        st.write(f"Path to syllabus: {syllabus_path}")
+        st.write(f"File exists: {os.path.exists(syllabus_path)}")
         
-        
-        # Create a download button for the syllabus
-        with open(syllabus_path, "rb") as img_file:
-            syllabus_data = img_file.read()
-            st.download_button(
-                label=f"Download {selected_class} Syllabus",
-                data=syllabus_data,
-                file_name=f"{selected_class}_Syllabus.png",
-                mime="image/png"
-            )
+        if os.path.exists(syllabus_path):
+            syllabus_image = Image.open(syllabus_path)
+            st.image(syllabus_image, caption=f"{selected_class} Syllabus", width=800)
+            
+            # Create a download button for the syllabus
+            with open(syllabus_path, "rb") as img_file:
+                syllabus_data = img_file.read()
+                st.download_button(
+                    label=f"Download {selected_class} Syllabus",
+                    data=syllabus_data,
+                    file_name=f"{selected_class}_Syllabus.png",
+                    mime="image/png"
+                )
+        else:
+            st.error(f"File not found: {syllabus_path}")
     else:
-        st.error("Syllabus image not found for the selected class.")
+        st.error("Syllabus not available for the selected class.")
 
-# Contact Page
 elif choice == "Contact":
     # Custom CSS for styling
     st.markdown("""
