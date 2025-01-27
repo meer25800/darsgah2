@@ -250,16 +250,7 @@ elif choice == "Student Portal":
             else:
                 st.write("No marks available yet.")
 
-          """  st.subheader("Syllabus")
-            syllabus_link = syllabus_links.get(student_info['Class'], None)
-
-            if syllabus_link:
-                st.write(f"Download the syllabus for {student_info['Class']}:")
-                st.markdown(f"[Download Syllabus]({syllabus_link})", unsafe_allow_html=True)
-            else:
-                st.write("Syllabus not available.")
-        else:
-            st.error("Student ID not found. Please try again.")"""
+          
 
             st.subheader("Syllabus")
         syllabus_link = syllabus_links.get(student_info['Class'], None)
