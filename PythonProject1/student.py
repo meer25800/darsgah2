@@ -252,10 +252,19 @@ elif choice == "Student Portal":
                 st.write("No marks available yet.")
 
                 student_info = {"Class": "Class 1"}  # Replace with the actual student class dynamically
-
+                syllabus_links = {
+                "Class 1": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 2": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 3": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 4": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 5": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 6": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 7": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+                "Class 8": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/1-10_merged.pdf",
+            }
             # Fetch the syllabus link for the given class
                 syllabus_link = syllabus_links.get(student_info["Class"])
-
+                
                 if syllabus_link:
                     try:
                         if syllabus_link.startswith("http"):  # If the link is a raw URL
