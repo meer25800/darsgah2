@@ -97,11 +97,11 @@ if "students" not in st.session_state:
     )
 
 syllabus_links = {
-    "Class 1": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
-    "Class 2": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
-    "Class 3": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
-    "Class 4": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
-    "Class 5": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
+    "Class 1": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
+    "Class 2": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
+    "Class 3": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
+    "Class 4": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
+    "Class 5": "https://drive.google.com/file/d/1fmbzw4APTEzPhCKCEnmNRiZ76vjvAlIA/view?usp=sharing",
     "Class 6": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
     "Class 7": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
     "Class 8": "https://drive.google.com/file/d/1IbQBpjhfgtrcQlHH-cqs2I6GGXNAI2d-/view?usp=sharing",
