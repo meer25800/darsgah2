@@ -318,11 +318,13 @@ elif choice == "Admin Portal":
         st.error("Incorrect password.")
 
 
+import requests  # Add this import to fetch the image from the URL
+
 elif choice == "Syllabus":
     st.header("Class Syllabus")
     
     # Class options
-    classes = [f" Class {i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} " for i in range(1, 9)]
+    classes = [f"Class {i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'}" for i in range(1, 9)]
     selected_class = st.selectbox("Select Class", classes)
 
     # Mapping of syllabus images with raw GitHub URLs for each class
@@ -333,23 +335,30 @@ elif choice == "Syllabus":
         "Class 4th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 5th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 6th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 6th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 7th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 8th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
     }
 
-    syllabus_path = syllabus_images.get(selected_class)
+    syllabus_url = syllabus_images.get(selected_class)
 
-    if syllabus_path:
-        # Display the image from GitHub
-        #st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
-        
-        # Create a download button for the syllabus
-        st.download_button(
-            label=f"Download {selected_class} Syllabus",
-            data=f"[Download Syllabus](syllabus_path)",
-            file_name=f"{selected_class}_Syllabus.png",
-            mime="image/png"
-        )
+    if syllabus_url:
+        # Fetch the image from the URL
+        response = requests.get(syllabus_url)
+        if response.status_code == 200:
+            # Display the image
+            st.image(response.content, caption=f"{selected_class} Syllabus", width=600)
+
+            # Allow the user to download the image
+            st.download_button(
+                label=f"Download {selected_class} Syllabus",
+                data=response.content,
+                file_name=f"{selected_class}_Syllabus.png",
+                mime="image/png"
+            )
+        else:
+            st.error(f"Failed to fetch the syllabus image for {selected_class}.")
+    else:
+        st.error("Syllabus not available for the selected class.")
 
 
 
