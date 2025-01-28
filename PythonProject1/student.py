@@ -341,7 +341,7 @@ elif choice == "Syllabus":
 
     if syllabus_path:
         # Display the image from GitHub
-        st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
+        #st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
         
         # Create a download button for the syllabus
         st.download_button(
