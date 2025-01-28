@@ -251,7 +251,7 @@ elif choice == "Student Portal":
 elif choice == "Admin Portal":
     st.header("Admin Portal")
     admin_password = st.text_input("Enter Admin Password", type="password")
-    if admin_password == "admin123":
+    if admin_password == "aamir123786":
         admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students"])
 
         if admin_choice == "Add Student":
