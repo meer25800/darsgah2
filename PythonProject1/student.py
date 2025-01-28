@@ -313,28 +313,7 @@ elif choice == "Admin Portal":
             else:
                 st.dataframe(st.session_state["students"])
 
-        elif admin_choice == "Update Students via CSV":
-            st.subheader("Update Students via CSV")
-            uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
-
-            if uploaded_file is not None:
-                try:
-                    # Read the uploaded CSV file
-                    uploaded_data = pd.read_csv(uploaded_file)
-
-                    # Ensure columns match the required format
-                    required_columns = ["ID", "Name", "Age", "Gender", "Class", "Contact", "Marks"]
-                    if not all(col in uploaded_data.columns for col in required_columns):
-                        st.error("Uploaded CSV does not have the required columns: " + ", ".join(required_columns))
-                    else:
-                        # Merge the data and update the student records
-                        uploaded_data["Marks"] = uploaded_data["Marks"].apply(eval)  # Convert Marks column to dictionary
-                        st.session_state["students"] = pd.concat([st.session_state["students"], uploaded_data], ignore_index=True).drop_duplicates(subset="ID", keep="last")
-                        st.success("Student data updated successfully!")
-                        st.dataframe(st.session_state["students"])
-
-                except Exception as e:
-                    st.error(f"Error processing file: {e}")
+       
     else:
         st.error("Incorrect password.")
 
