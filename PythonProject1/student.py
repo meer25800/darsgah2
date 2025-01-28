@@ -392,8 +392,8 @@ elif choice == "Contact":
     # Contact Us Section
     st.markdown('<p class="contact-title">Contact Us</p>', unsafe_allow_html=True)
     st.markdown('<p class="contact-info">For inquiries, please contact us at:</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">📞 <strong>Phone:</strong> +91-12345-67890</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">📧 <strong>Email:</strong> info@darsgah.com</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info">📞 <strong>Phone:</strong> +91-7889652569</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info">📧 <strong>Email:</strong> aamirmir08@gmail.com</p>', unsafe_allow_html=True)
 
     # Contact Button
     contact_button = st.button('Get in Touch', key='contact_button', help="Click here to send your inquiry")
