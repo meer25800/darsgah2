@@ -252,7 +252,7 @@ elif choice == "Admin Portal":
     st.header("Admin Portal")
     admin_password = st.text_input("Enter Admin Password", type="password")
     if admin_password == "admin123":
-        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students", "Update Students via CSV"])
+        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students"])
 
         if admin_choice == "Add Student":
             st.subheader("Add New Student")
@@ -325,45 +325,32 @@ elif choice == "Syllabus":
     classes = [f"{i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} Class" for i in range(1, 9)]
     selected_class = st.selectbox("Select Class", classes)
 
-    # Directory of the script (update this if paths are different)
-    base_path = os.path.dirname(__file__)
-
-    # Mapping of syllabus images for each class
+    # Mapping of syllabus images with raw GitHub URLs for each class
     syllabus_images = {
-        "1st Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "2nd Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "3rd Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "4th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "5th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "6th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "7th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
-        "8th Class": os.path.join(base_path, "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"),
+        "1st Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "2nd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "3rd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "4th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "5th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "6th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "7th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "8th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
     }
 
     syllabus_path = syllabus_images.get(selected_class)
 
     if syllabus_path:
-        # Debugging output
-        #st.write(f"Path to syllabus: {syllabus_path}")
-        #st.write(f"File exists: {os.path.exists(syllabus_path)}")
+        # Display the image from GitHub
+        st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
         
-        if os.path.exists(syllabus_path):
-            syllabus_image = Image.open(syllabus_path)
-            st.image(syllabus_image, caption=f"{selected_class} Syllabus", width=600)
-            
-            # Create a download button for the syllabus
-            with open(syllabus_path, "rb") as img_file:
-                syllabus_data = img_file.read()
-                st.download_button(
-                    label=f"Download {selected_class} Syllabus",
-                    data=syllabus_data,
-                    file_name=f"{selected_class}_Syllabus.png",
-                    mime="image/png"
-                )
-        else:
-            st.error(f"File not found: {syllabus_path}")
-    else:
-        st.error("Syllabus not available for the selected class.")
+        # Create a download button for the syllabus
+        st.download_button(
+            label=f"Download {selected_class} Syllabus",
+            data=f"[Download Syllabus](syllabus_path)",
+            file_name=f"{selected_class}_Syllabus.png",
+            mime="image/png"
+        )
+
 
 
 elif choice == "Contact":
