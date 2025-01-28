@@ -322,12 +322,12 @@ elif choice == "Syllabus":
     st.header("Class Syllabus")
     
     # Class options
-    classes = [f"{i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} Class" for i in range(1, 9)]
+    classes = [f" Class {i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'} " for i in range(1, 9)]
     selected_class = st.selectbox("Select Class", classes)
 
     # Mapping of syllabus images with raw GitHub URLs for each class
     syllabus_images = {
-        "1st Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 1st": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "2nd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "3rd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "4th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
