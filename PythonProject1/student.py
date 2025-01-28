@@ -327,7 +327,7 @@ elif choice == "Syllabus":
 
     # Mapping of syllabus images with raw GitHub URLs for each class
     syllabus_images = {
-        "1st Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 1st": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "2nd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "3rd Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "4th Class": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
@@ -341,7 +341,7 @@ elif choice == "Syllabus":
 
     if syllabus_path:
         # Display the image from GitHub
-        st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
+        #st.image(syllabus_path, caption=f"{selected_class} Syllabus", width=600)
         
         # Create a download button for the syllabus
         st.download_button(
