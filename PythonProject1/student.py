@@ -124,7 +124,7 @@ st.markdown("""
     /* Button styles */
     .btn {
         background-color: #abdbe3;
-        color: white;
+        color: #1e8025;
         font-size: 18px;
         padding: 15px 30px;
         border-radius: 8px;
