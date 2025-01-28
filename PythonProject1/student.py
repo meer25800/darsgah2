@@ -345,7 +345,7 @@ elif choice == "Syllabus":
         response = requests.get(syllabus_url)
         if response.status_code == 200:
             # Display the image
-            st.image(response.content, caption=f"{selected_class} Syllabus", width=600)
+           # st.image(response.content, caption=f"{selected_class} Syllabus", width=600)
 
             # Allow the user to download the image
             st.download_button(
