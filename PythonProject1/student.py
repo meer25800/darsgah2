@@ -318,8 +318,7 @@ elif choice == "Admin Portal":
         st.error("Incorrect password.")
 
 
-import requests  # Add this import to fetch the image from the URL
-
+ # Add this import to fetch the image from the URL
 elif choice == "Syllabus":
     st.header("Class Syllabus")
     
