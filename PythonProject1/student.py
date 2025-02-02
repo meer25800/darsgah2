@@ -275,6 +275,7 @@ elif choice == "Admin Portal":
 
                 
                 contact = st.text_input("Contact Number")
+                position = st.text_input("Position")
 
                 # Initialize an empty dictionary for marks
                 marks = {}
@@ -303,6 +304,7 @@ elif choice == "Admin Portal":
                         "Gender": gender,
                         "Class": student_class,
                         "Contact": contact,
+                        "Position": position,
                         "Marks": marks
                     }
                     new_student_df = pd.DataFrame([new_student])
