@@ -206,7 +206,7 @@ elif choice == "Student Portal":
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
             st.write(f"**Contact:** {student_info['Contact']}")
-            st.write(f"**Position:** {student_info['position']}")
+            
 
             st.subheader("Marks Sheet")
             marks = student_info['Marks']
@@ -292,7 +292,7 @@ elif choice == "Admin Portal":
                         "Term 1": {"Obtained": term1_obtained, "Max": term1_max},
                         "Term 2": {"Obtained": term2_obtained, "Max": term2_max}
                     }
-                    position = st.text_input("enter Position")
+                    
                 submit = st.form_submit_button("Add Student")
 
                 if submit:
