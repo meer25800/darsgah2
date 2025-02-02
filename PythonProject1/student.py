@@ -230,7 +230,7 @@ elif choice == "Student Portal":
 
                 percentage = (total_obtained / total_max) * 100
                 result = "Pass" if percentage >= 40 else "Fail"
-                position="First" or "Second" or "Third" or "None"
+                
 
                 st.write("\n".join(result_lines))
                 st.write(f"**Total:** {total_obtained}/{total_max}")
@@ -291,7 +291,7 @@ elif choice == "Admin Portal":
                         "Term 1": {"Obtained": term1_obtained, "Max": term1_max},
                         "Term 2": {"Obtained": term2_obtained, "Max": term2_max}
                     }
-
+                    position = st.text_input("enter Position")
                 submit = st.form_submit_button("Add Student")
 
                 if submit:
