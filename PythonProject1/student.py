@@ -256,7 +256,7 @@ elif choice == "Admin Portal":
     st.header("Admin Portal")
     admin_password = st.text_input("Enter Admin Password", type="password")
     if admin_password == "aamir123786":
-        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students","Upload CSV":])
+        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students","Upload CSV"])
         if admin_choice == "Upload CSV":
             st.subheader("Upload Student Data CSV")
             uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
