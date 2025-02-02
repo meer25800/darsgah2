@@ -256,22 +256,8 @@ elif choice == "Admin Portal":
     st.header("Admin Portal")
     admin_password = st.text_input("Enter Admin Password", type="password")
     if admin_password == "aamir123786":
-        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students","Upload CSV"])
-        if admin_choice == "Upload CSV":
-            st.subheader("Upload Student Data CSV")
-            uploaded_file = st.file_uploader("Upload CSV", type=["csv"])
-
-            if uploaded_file is not None:
-                df = pd.read_csv(uploaded_file)
-                
-                # Check if required columns exist
-                required_columns = {"ID", "Name", "Age", "Gender", "Class", "Contact", "Position"}
-                if not required_columns.issubset(df.columns):
-                    st.error("CSV file must contain columns: ID, Name, Age, Gender, Class, Contact, Position")
-                else:
-                    # Store in session state
-                    st.session_state["students"] = df
-                    st.success("Student data uploaded successfully!")
+        admin_choice = st.selectbox("Admin Options", ["Add Student", "View All Students"])
+       
 
         if admin_choice == "Add Student":
             st.subheader("Add New Student")
