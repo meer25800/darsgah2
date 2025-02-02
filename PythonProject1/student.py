@@ -312,12 +312,61 @@ elif choice == "Admin Portal":
                     st.session_state["students"] = pd.concat([st.session_state["students"], new_student_df], ignore_index=True)
                     st.success(f"Student {name} has been added successfully!")
 
-        elif admin_choice == "View All Students":
+        """elif admin_choice == "View All Students":
             st.subheader("All Students")
             if st.session_state["students"].empty:
                 st.write("No students have been added yet.")
             else:
-                st.dataframe(st.session_state["students"])
+                st.dataframe(st.session_state["students"])"""
+            elif admin_choice == "View All Students":
+                st.subheader("All Students")
+            
+                if st.session_state["students"].empty:
+                    st.write("No students have been added yet.")
+                else:
+                    st.dataframe(st.session_state["students"])  # Show all students
+            
+                    # Select student to edit
+                    student_ids = st.session_state["students"]["ID"].tolist()
+                    selected_student_id = st.selectbox("Select Student to Edit", student_ids)
+            
+                    # Find selected student details
+                    student_data = st.session_state["students"][st.session_state["students"]["ID"] == selected_student_id]
+                    
+                    if not student_data.empty:
+                        student_info = student_data.iloc[0]
+            
+                        st.subheader(f"Editing {student_info['Name']}")
+                        
+                        # Editable fields
+                        new_name = st.text_input("Full Name", student_info["Name"])
+                        new_class = st.text_input("Class", student_info["Class"])
+                        new_contact = st.text_input("Contact Number", student_info["Contact"])
+                        new_position = st.text_input("Position", student_info.get("Position", ""))
+            
+                        # Update Marks (Optional)
+                        updated_marks = student_info["Marks"]
+                        for subject, scores in updated_marks.items():
+                            term1_obtained = st.number_input(f"{subject} - Term 1 Obtained", value=scores["Term 1"]["Obtained"], min_value=0, max_value=100)
+                            term1_max = st.number_input(f"{subject} - Term 1 Max", value=scores["Term 1"]["Max"], min_value=1, max_value=100)
+                            term2_obtained = st.number_input(f"{subject} - Term 2 Obtained", value=scores["Term 2"]["Obtained"], min_value=0, max_value=100)
+                            term2_max = st.number_input(f"{subject} - Term 2 Max", value=scores["Term 2"]["Max"], min_value=1, max_value=100)
+            
+                            updated_marks[subject] = {
+                                "Term 1": {"Obtained": term1_obtained, "Max": term1_max},
+                                "Term 2": {"Obtained": term2_obtained, "Max": term2_max}
+                            }
+            
+                        # Save changes button
+                        if st.button("Save Changes"):
+                            st.session_state["students"].loc[st.session_state["students"]["ID"] == selected_student_id, ["Name", "Class", "Contact", "Position"]] = [
+                                new_name, new_class, new_contact, new_position
+                            ]
+                            st.session_state["students"].loc[st.session_state["students"]["ID"] == selected_student_id, "Marks"] = [updated_marks]
+                            
+                            st.success(f"Student {new_name}'s information updated successfully!")
+
+
 
        
     else:
