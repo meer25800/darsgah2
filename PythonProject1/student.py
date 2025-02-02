@@ -230,11 +230,13 @@ elif choice == "Student Portal":
 
                 percentage = (total_obtained / total_max) * 100
                 result = "Pass" if percentage >= 40 else "Fail"
+                position="First" or "Second" or "Third" or "None"
 
                 st.write("\n".join(result_lines))
                 st.write(f"**Total:** {total_obtained}/{total_max}")
                 st.write(f"**Percentage:** {percentage:.2f}%")
                 st.write(f"**Result:** {result}")
+                st.write(f"**Position:** {position}")
 
                 result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
                 st.download_button(label="Download Result",
