@@ -319,7 +319,7 @@ elif choice == "Admin Portal":
             else:
                 st.dataframe(st.session_state["students"])"""
             elif admin_choice == "View All Students":
-                st.subheader("All Students")
+            st.subheader("All Students")
             
                 if st.session_state["students"].empty:
                     st.write("No students have been added yet.")
