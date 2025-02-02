@@ -56,7 +56,7 @@ menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact"]
 choice = st.sidebar.selectbox("Search Here", menu)
 
 # Data storage (mock database using pandas DataFrame)
-"""if "students" not in st.session_state:
+if "students" not in st.session_state:
     st.session_state["students"] = pd.DataFrame(
         [
             {
@@ -96,17 +96,7 @@ choice = st.sidebar.selectbox("Search Here", menu)
                 }
             }
         ]
-    )"""
-
-students_data = pd.read_csv('students_data.csv')
-
-# Check if students data is not in session state
-if "students" not in st.session_state:
-    # Save the DataFrame to session state
-    st.session_state["students"] = students_data
-
-# Display the students data
-st.write(st.session_state["students"])
+    )
 
 # Home Page
 st.markdown("""
