@@ -206,6 +206,7 @@ elif choice == "Student Portal":
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
             st.write(f"**Contact:** {student_info['Contact']}")
+            st.write(f"**Position:** {student_info['Position']}")
 
             st.subheader("Marks Sheet")
             marks = student_info['Marks']
@@ -236,7 +237,7 @@ elif choice == "Student Portal":
                 st.write(f"**Total:** {total_obtained}/{total_max}")
                 st.write(f"**Percentage:** {percentage:.2f}%")
                 st.write(f"**Result:** {result}")
-                st.write(f"**Position:** {position}")
+                
 
                 result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
                 st.download_button(label="Download Result",
