@@ -206,6 +206,7 @@ elif choice == "Student Portal":
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
             st.write(f"**Contact:** {student_info['Contact']}")
+            st.write(f"**Position:** {student_info.get('Position', 'Not Assigned')}")  # Added Position
             
 
             st.subheader("Marks Sheet")
