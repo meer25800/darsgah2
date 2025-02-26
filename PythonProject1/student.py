@@ -80,7 +80,7 @@ st.markdown("""
     }
     .front-title {
         
-        font-size: 60px;
+        font-size: 70px;
         color: white; /* Text Color */
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
@@ -94,7 +94,7 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
-menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact Us"]
+menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
 
@@ -411,8 +411,58 @@ elif choice == "Admin Portal":
        
     else:
         st.error("Incorrect password.")
+# passout students
+elif choice == "Passout 2024":
+    st.header("Passout Students - 2024")
 
+    # List of Passout Students
+    passout_students = [
+        "Ahmed Khan",
+        "Ayesha Siddiqui",
+        "Ali Raza",
+        "Fatima Noor",
+        "Sara Ahmed",
+        "Zain Ul Abideen"
+    ]
 
+    # Display Passout Students
+    st.markdown("""
+        <style>
+            .passout-list-container {
+                background: #be5f25;
+                color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                margin-top: 20px;
+            }
+            .passout-list-container h3 {
+                color: #ffeb3b;
+                text-align: center;
+            }
+            .passout-list-container ul {
+                list-style-type: none;
+                padding: 0;
+                font-size: 20px;
+            }
+            .passout-list-container ul li {
+                margin: 10px 0;
+            }
+        </style>
+        <div class="passout-list-container">
+            <h3>🎓 Congratulations to the Class of 2024! 🎓</h3>
+            <ul>
+                <li>Ahmed Khan</li>
+                <li>Ayesha Siddiqui</li>
+                <li>Ali Raza</li>
+                <li>Fatima Noor</li>
+                <li>Sara Ahmed</li>
+                <li>Zain Ul Abideen</li>
+            </ul>
+        </div>
+    """, unsafe_allow_html=True)
+
+    
  # Add this import to fetch the image from the URL
 elif choice == "Syllabus":
     st.header("Class Syllabus")
