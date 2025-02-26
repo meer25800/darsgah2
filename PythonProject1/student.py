@@ -510,13 +510,7 @@ elif choice == "Topper List":
     st.header("Topper List")
 
     # List of Toppers
-    toppers = [
-        {"name": "Ahmed Khan", "percentage": "98%", "position": "1st", "class": "8TH"},
-        {"name": "Fatima Noor", "percentage": "96%", "position": "2nd", "class": "7TH"},
-        {"name": "Ayesha Siddiqui", "percentage": "95%", "position": "3rd", "class": "8TH"},
-        {"name": "Ali Raza", "percentage": "94%", "position": "4th", "class": "6TH"},
-        {"name": "Sara Ahmed", "percentage": "93%", "position": "5th", "class": "7TH"}
-    ]
+   
 
     # Display Toppers
     st.markdown("""
@@ -569,15 +563,7 @@ elif choice == "Topper List":
     """, unsafe_allow_html=True)
 
     # Loop through toppers list to display each student
-    for topper in toppers:
-        st.markdown(f"""
-            <tr>
-                <td>{topper['name']}</td>
-                <td>{topper['percentage']}</td>
-                <td>{topper['position']}</td>
-                <td>{topper['class']}</td>
-            </tr>
-        """, unsafe_allow_html=True)
+    
     
     # Close the table and container div
     st.markdown("""
