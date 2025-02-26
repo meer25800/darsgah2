@@ -125,11 +125,17 @@ st.markdown("""
         margin-left:30px
     }
     .front-description {
-        font-size: 20px;
-        color: #1e8025;
+             display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
         text-align: center;
-       
-        margin-bottom: 40px;
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 
     /* Button styles */
