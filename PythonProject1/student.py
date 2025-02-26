@@ -520,37 +520,33 @@ elif choice == "Topper List":
 
     # Display Toppers
     st.markdown("""
-        <style>
-            .topper-list-container {
-                background: #283593;
-                color: #ffffff;
-                padding: 20px;
-                border-radius: 10px;
-                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-                margin-top: 20px;
-            }
-            .topper-list-container h3 {
-                color: #ffeb3b;
-                text-align: center;
-            }
-            .topper-table {
-                width: 100%;
-                border-collapse: collapse;
-                margin-top: 20px;
-            }
-            .topper-table th, .topper-table td {
-                border: 1px solid #ffffff;
-                padding: 10px;
-                text-align: center;
-                font-size: 18px;
-            }
-            .topper-table th {
-                background: #3949ab;
-            }
-            .topper-table tr:nth-child(even) {
-                background: #3f51b5;
-            }
-        </style>
+      
+    <style>
+        .topper-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .topper-table th, .topper-table td {
+            border: 1px solid #ffffff;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 18px;
+        }
+        .topper-table th {
+            background: #3949ab;
+            color: #ffffff;
+        }
+        .topper-table tr:nth-child(even) {
+            background: #3f51b5;
+        }
+        .topper-table tr:hover {
+            background: #5c6bc0;
+        }
+    </style>
+""", unsafe_allow_html=True)
         <div class="topper-list-container">
             <h3>🏆 Top Performers of the Year 🏆</h3>
             <table class="topper-table">
