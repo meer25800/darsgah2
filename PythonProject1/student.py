@@ -459,7 +459,7 @@ elif choice == "Passout 2024":
                 <li>Muqadas Shabaan</li>
                 <li>Toiba Rashid</li>
                 
-            </ul>
+            
         </div>
     """, unsafe_allow_html=True)
 
