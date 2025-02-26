@@ -32,6 +32,31 @@ st.markdown("""
         }
     </style>
 """, unsafe_allow_html=True)
+st.markdown("""
+    <style>
+    /* Sidebar styling */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        color: #2e2e3a;
+        border-radius: 10px;
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    
+    /* Sidebar text color */
+    .css-1v3fvcr {
+        color: #2e2e3a;
+    }
+    
+    /* Adjust selectbox style */
+    .css-1n543e5 {
+        background-color: #fff;
+        color: #2e2e3a;
+        border-radius: 5px;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 # Inject custom CSS to handle centering properly
 st.markdown("""
