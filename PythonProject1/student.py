@@ -34,127 +34,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Inject custom CSS to handle centering properly
-# Change Background Color
 st.markdown("""
     <style>
-        /* Change overall background color */
-        .stApp {
-            background-color: #f4f4f9;
-        }
-
-        /* Front title styling */
-        .front-title {
-            font-size: 55px;
-            color: #3a86ff;
-            font-weight: bold;
-            text-align: center;
-            direction: rtl;
-            margin-bottom: 20px;
-        }
-
-        /* Front description styling */
-        .front-description {
-            font-size: 20px;
-            color: #2e2e3a;
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        /* Navigation sidebar */
-        .css-1v3fvcr {
-            background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Button styles */
-        .btn {
-            background-color: #4caf50;
-            color: #ffffff;
-            font-size: 18px;
-            padding: 15px 30px;
-            border-radius: 8px;
-            border: none;
-            display: block;
-            width: 100%;
-            margin: 10px 0;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-        .btn:hover {
-            background-color: #388e3c;
-        }
-        .btn-admin {
-            background-color: #ff6b6b;
-            color: #ffffff;
-        }
-        .btn-admin:hover {
-            background-color: #e53935;
-        }
-
-        /* Student detail section */
-        .student-details {
-            font-size: 18px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            padding: 20px;
-            margin-top: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .student-details p {
-            margin: 10px 0;
-            color: #2e2e3a;
-        }
-
-        /* Marks section */
-        .marks-section {
-            font-size: 16px;
-            margin-top: 20px;
-            color: #2e2e3a;
-        }
-
-        /* Student result card styling */
-        .result-card {
-            background-color: #ffffff;
-            padding: 15px;
-            border-radius: 10px;
-            margin-top: 20px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .result-card p {
-            font-size: 18px;
-            margin: 5px 0;
-            color: #2e2e3a;
-        }
-
-        /* Contact Section */
-        .contact-title {
-            font-size: 36px;
-            color: #3a86ff;
-            font-weight: bold;
-            text-align: center;
-        }
-        .contact-info {
-            font-size: 20px;
-            color: #2e2e3a;
-            text-align: center;
-        }
-        .contact-button {
-            background-color: #4caf50;
-            color: white;
-            font-size: 18px;
-            padding: 12px 24px;
-            border-radius: 8px;
-            border: none;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            transition: background-color 0.3s ease;
-        }
-        .contact-button:hover {
-            background-color: #388e3c;
-        }
+    
+    .front-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .front-title {
+        font-size: 40px;
+        color:#a800b9;
+        font-weight: bold;
+        direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
+        margin-bottom: 20px;
+    }
     </style>
 """, unsafe_allow_html=True)
-
 
 # Use HTML to ensure proper centering
 st.markdown('<div class="front-title-container"><div class="front-title"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
@@ -513,4 +413,4 @@ elif choice == "Contact":
     # Contact Button
     contact_button = st.button('Get in Touch', key='contact_button', help="Click here to send your inquiry")
     if contact_button:
-        st.write("Thank you for reaching out! We'll get back to you soon.")
+        st.write("Thank you for reaching out! We'll get back to you soon.") 
