@@ -28,7 +28,7 @@ st.markdown("""
     <style>
         /* Change background color to white */
         .stApp {
-           background-color: #6525be
+           background-color: white;
 
         }
     </style>
@@ -37,7 +37,7 @@ st.markdown("""
     <style>
     /* Sidebar styling */
     [data-testid="stSidebar"] {
-        background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+        background: white;
 
         color: #be5f25;
         border-radius: 10px;
