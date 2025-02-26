@@ -272,7 +272,7 @@ if choice == "Home":
            
         </div>
         <div class="top-performers-container">
-            <span class="passout-students-text">🎓 Passout Students: X, Y, Z, A, B, C 🎓</span>
+            <span class="top-performers-text">🎓 Passout Students: X, Y, Z, A, B, C 🎓</span>
            
         </div>
     """, unsafe_allow_html=True)
