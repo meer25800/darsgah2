@@ -457,7 +457,7 @@ elif choice == "Syllabus":
 
 
 
-elif choice == "Contact":
+elif choice == "Contact Us":
     # Custom CSS for styling
     st.markdown("""
     <style>
