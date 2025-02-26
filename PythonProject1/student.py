@@ -81,7 +81,7 @@ st.markdown("""
     .front-title {
         
         font-size: 40px;
-        color: #2e3a59; /* Text Color */
+        color: white; /* Text Color */
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
         margin-bottom: 20px;
