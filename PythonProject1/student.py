@@ -45,6 +45,10 @@ st.markdown("""
         height: auto;
         margin: 0 auto;
         text-align: center;
+        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
     .front-title {
         font-size: 40px;
@@ -60,7 +64,7 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
-menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact"]
+menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
 
