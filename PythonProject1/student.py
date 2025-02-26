@@ -476,10 +476,10 @@ elif choice == "Syllabus":
     syllabus_images = {
         "Class 1st": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 2nd": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 3rd": "https://raw.githubusercontent.com/meer25800/darsgah2/blob/main/PythonProject1/a-3.png",
+        "Class 3rd": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/a-3.png",
         "Class 4th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/a-3.png",
-        "Class 5th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
-        "Class 6th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
+        "Class 5th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/5th Syllabus-1.png",
+        "Class 6th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/6th Syllabus-1.png",
         "Class 7th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
         "Class 8th": "https://raw.githubusercontent.com/meer25800/darsgah2/main/PythonProject1/Screenshot__193_-removebg-preview.png",
     }
