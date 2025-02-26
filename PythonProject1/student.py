@@ -560,6 +560,12 @@ elif choice == "Topper List":
                     <th>Position</th>
                     <th>Class</th>
                 </tr>
+                <tr>
+                    <td>Name</td>
+                    <td>Percentage</td>
+                    <td>Position</td>
+                    <td>Class</td>
+                </tr>
     """, unsafe_allow_html=True)
 
     # Loop through toppers list to display each student
