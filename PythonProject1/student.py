@@ -72,7 +72,7 @@ st.markdown("""
         height: auto;
         margin: 0 auto;
         text-align: center;
-        background: #81c784;
+        background: #008CBA;
         padding: 20px;
         border-radius: 15px;
         
@@ -162,7 +162,7 @@ st.markdown("""
         height: auto;
         margin: 0 auto;
         text-align: center;
-        background: #283593;
+        background: #008CBA;
         padding: 20px;
         border-radius: 15px;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
