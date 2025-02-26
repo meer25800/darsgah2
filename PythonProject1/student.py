@@ -24,10 +24,19 @@ logo_base64 = get_image_base64(logo_path)
 
 # Set page configuration
 st.set_page_config(page_title="Darsgah Taleemul Quran Wal Hadith Kongamdara", page_icon="📘")
+st.markdown("""
+    <style>
+        /* Change background color to white */
+        .stApp {
+            background-color: white;
+        }
+    </style>
+""", unsafe_allow_html=True)
 
 # Inject custom CSS to handle centering properly
 st.markdown("""
     <style>
+    
     .front-title-container {
         display: flex;
         justify-content: center;
