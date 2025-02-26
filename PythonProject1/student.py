@@ -256,7 +256,7 @@ if choice == "Home":
             .top-performers-text {
                 display: inline-block;
                 padding-left: 100%;
-                animation: scroll-text 15s linear infinite;
+                animation: scroll-text 10s linear infinite;
                 font-size: 22px;
                 font-weight: bold;
             }
@@ -268,6 +268,8 @@ if choice == "Home":
             }
         </style>
         <div class="top-performers-container">
+            <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
+            <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
             <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
         </div>
     """, unsafe_allow_html=True)
