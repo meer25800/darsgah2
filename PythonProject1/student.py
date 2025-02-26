@@ -75,7 +75,7 @@ st.markdown("""
         background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
         padding: 20px;
         border-radius: 15px;
-        color: #2e3a59;
+        color: white;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
     .front-title {
