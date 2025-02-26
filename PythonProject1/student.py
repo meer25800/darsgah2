@@ -28,7 +28,8 @@ st.markdown("""
     <style>
         /* Change background color to white */
         .stApp {
-           background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+           background-color: #f0f8ff;
+
         }
     </style>
 """, unsafe_allow_html=True)
