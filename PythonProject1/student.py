@@ -94,7 +94,7 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
-menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Contact Us"]
+menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Topper List","Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
 
