@@ -37,7 +37,7 @@ st.markdown("""
     <style>
     /* Sidebar styling */
     [data-testid="stSidebar"] {
-        background: #af6382;
+        background: #008CBA;
 
         color: #be5f25;
         border-radius: 10px;
