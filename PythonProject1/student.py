@@ -233,7 +233,7 @@ if choice == "Home":
             """,
         unsafe_allow_html=True,
     )
-    st.markdown('<p class="front-title">Welcome to Darsgah Taleemul Quran Wal Hadith Kongamdara</p>', unsafe_allow_html=True)
+    st.markdown('<p class="front-title" style="color: #ffffff;">الرَّحْمَـٰنُ  عَلَّمَ  الْقُرْآنَ  خَلَقَ  الْإِنسَانَ  عَلَّمَهُ  الْبَيَانَ</p>', unsafe_allow_html=True)
 
     # Display Logo
 
