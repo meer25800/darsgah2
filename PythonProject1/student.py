@@ -37,7 +37,7 @@ st.markdown("""
     /* Sidebar styling */
     [data-testid="stSidebar"] {
         background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
-        color: #2e2e3a;
+        color: #be5f25;
         border-radius: 10px;
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
         padding-left: 15px;
