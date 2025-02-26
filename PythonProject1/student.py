@@ -450,7 +450,7 @@ elif choice == "Passout 2024":
             }
         </style>
         <div class="passout-list-container">
-            <h3>🎓 Congratulations to the 8TH Class Students of 2024! 🎓</h3>
+            <h3>🎓 Congratulations to  8TH Class Students of 2024! 🎓</h3>
             <ul>
                 <li>Aftab Shabir</li>
                 <li>Arsalaan Fayaz</li>
