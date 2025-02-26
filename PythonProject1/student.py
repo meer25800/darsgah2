@@ -269,8 +269,11 @@ if choice == "Home":
         </style>
         <div class="top-performers-container">
             <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
+           
+        </div>
+        <div class="top-performers-container">
             <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
-            <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
+           
         </div>
     """, unsafe_allow_html=True)
  
