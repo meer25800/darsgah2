@@ -79,11 +79,13 @@ st.markdown("""
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
     .front-title {
+        
         font-size: 40px;
-        color:#a800b9;
+        color: #2e3a59; /* Text Color */
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
         margin-bottom: 20px;
+    
     }
     </style>
 """, unsafe_allow_html=True)
