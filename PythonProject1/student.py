@@ -75,12 +75,12 @@ st.markdown("""
         background: #af6382;
         padding: 20px;
         border-radius: 15px;
-        color: white;
+        
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
     .front-title {
         
-        font-size: 40px;
+        font-size: 50px;
         color: white; /* Text Color */
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
@@ -91,7 +91,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Use HTML to ensure proper centering
-st.markdown('<div class="front-title-container"><div class="front-title"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
+st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
 menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact Us"]
