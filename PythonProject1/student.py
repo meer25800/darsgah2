@@ -72,7 +72,7 @@ st.markdown("""
         height: auto;
         margin: 0 auto;
         text-align: center;
-        background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+        background: #af6382;
         padding: 20px;
         border-radius: 15px;
         color: white;
