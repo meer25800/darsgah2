@@ -80,7 +80,7 @@ st.markdown("""
     }
     .front-title {
         
-        font-size: 50px;
+        font-size: 60px;
         color: white; /* Text Color */
         font-weight: bold;
         direction: rtl; /* Ensure proper alignment for Urdu/Arabic */
@@ -233,7 +233,7 @@ if choice == "Home":
             """,
         unsafe_allow_html=True,
     )
-    st.markdown('<p class="front-title" style="color: #ffffff;">الرَّحْمَـٰنُ  عَلَّمَ  الْقُرْآنَ  خَلَقَ  الْإِنسَانَ  عَلَّمَهُ  الْبَيَانَ</p>', unsafe_allow_html=True)
+    st.markdown('<p class="front-title" style="color: #ffffff;">الرَّحْمَـٰنُ   عَلَّمَ   الْقُرْآنَ   خَلَقَ   الْإِنسَانَ   عَلَّمَهُ   الْبَيَانَ</p>', unsafe_allow_html=True)
 
     # Display Logo
 
