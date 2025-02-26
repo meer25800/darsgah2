@@ -505,6 +505,79 @@ elif choice == "Syllabus":
     else:
         st.error("Syllabus not available for the selected class.")
 
+#topper list
+elif choice == "Topper List":
+    st.header("Topper List")
+
+    # List of Toppers
+    toppers = [
+        {"name": "Ahmed Khan", "percentage": "98%", "position": "1st", "class": "8TH"},
+        {"name": "Fatima Noor", "percentage": "96%", "position": "2nd", "class": "7TH"},
+        {"name": "Ayesha Siddiqui", "percentage": "95%", "position": "3rd", "class": "8TH"},
+        {"name": "Ali Raza", "percentage": "94%", "position": "4th", "class": "6TH"},
+        {"name": "Sara Ahmed", "percentage": "93%", "position": "5th", "class": "7TH"}
+    ]
+
+    # Display Toppers
+    st.markdown("""
+        <style>
+            .topper-list-container {
+                background: #283593;
+                color: #ffffff;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                margin-top: 20px;
+            }
+            .topper-list-container h3 {
+                color: #ffeb3b;
+                text-align: center;
+            }
+            .topper-table {
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            .topper-table th, .topper-table td {
+                border: 1px solid #ffffff;
+                padding: 10px;
+                text-align: center;
+                font-size: 18px;
+            }
+            .topper-table th {
+                background: #3949ab;
+            }
+            .topper-table tr:nth-child(even) {
+                background: #3f51b5;
+            }
+        </style>
+        <div class="topper-list-container">
+            <h3>🏆 Top Performers of the Year 🏆</h3>
+            <table class="topper-table">
+                <tr>
+                    <th>Name</th>
+                    <th>Percentage</th>
+                    <th>Position</th>
+                    <th>Class</th>
+                </tr>
+    """, unsafe_allow_html=True)
+
+    # Loop through toppers list to display each student
+    for topper in toppers:
+        st.markdown(f"""
+            <tr>
+                <td>{topper['name']}</td>
+                <td>{topper['percentage']}</td>
+                <td>{topper['position']}</td>
+                <td>{topper['class']}</td>
+            </tr>
+        """, unsafe_allow_html=True)
+    
+    # Close the table and container div
+    st.markdown("""
+            </table>
+        </div>
+    """, unsafe_allow_html=True)
 
 
 
