@@ -12,7 +12,7 @@ def get_image_base64(image_path):
 # Path to the logo
 
 
-logo_path = "/mount/src/darsgah2/PythonProject1/Screenshot__193_-removebg-preview.png"
+logo_path = "/mount/src/darsgah2/PythonProject1/q.png"
 if not os.path.exists(logo_path):
     print(f"File not found: {logo_path}")
 
