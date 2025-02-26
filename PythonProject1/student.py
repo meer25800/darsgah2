@@ -94,7 +94,7 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
-menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Topper List","Contact Us"]
+menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Topper List","Annual Programme","Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
 
@@ -572,6 +572,76 @@ elif choice == "Topper List":
     """, unsafe_allow_html=True)
 
 
+#events
+elif choice == "Annual Programme":
+    st.title("Annual Programme")
+    st.markdown("""
+    <style>
+        .programme-table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            text-align: center;
+            background: #81c784;
+            color: #fff;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .programme-table th, .programme-table td {
+            padding: 12px;
+            border: 1px solid #ffffff;
+        }
+        .programme-table th {
+            background: #388e3c;
+        }
+        .programme-table tr:nth-child(even) {
+            background: #66bb6a;
+        }
+        .programme-table tr:hover {
+            background: #43a047;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+    st.markdown("""
+        <div style='background: #4caf50; border-radius: 15px; padding: 20px;'>
+            <h2 style='color: #fff; text-align: center;'>🌟 Annual Programme Schedule 🌟</h2>
+            <table class='programme-table'>
+                <tr>
+                    <th>Category</th>
+                    <th>Student Name</th>
+                </tr>
+                <tr>
+                    <td>Quran Recitation</td>
+                    <td>Ahmed Khan</td>
+                </tr>
+                <tr>
+                    <td>Naat</td>
+                    <td>Fatima Noor</td>
+                </tr>
+                <tr>
+                    <td>Nazm</td>
+                    <td>Ayesha Siddiqui</td>
+                </tr>
+                <tr>
+                    <td>Dars-e-Quran</td>
+                    <td>Ali Raza</td>
+                </tr>
+                <tr>
+                    <td>Dars-Hadees</td>
+                    <td>Sara Ahmed</td>
+                </tr>
+                <tr>
+                    <td>Hadees</td>
+                    <td>Zainab Fatima</td>
+                </tr>
+                <tr>
+                    <td>General Topics</td>
+                    <td>Usman Ali</td>
+                </tr>
+            </table>
+        </div>
+    """, unsafe_allow_html=True)
 
 
 elif choice == "Contact Us":
