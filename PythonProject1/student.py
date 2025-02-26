@@ -485,10 +485,10 @@ elif choice == "Contact Us":
     """, unsafe_allow_html=True)
 
     # Contact Us Section
-    st.markdown('<p class="contact-title">Contact Us</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">For inquiries, please contact us at:</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">📞 <strong>Phone:</strong> +91-7889652569</p>', unsafe_allow_html=True)
-    st.markdown('<p class="contact-info">📧 <strong>Email:</strong> aamirmir08@gmail.com</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-title" style="color: #ffffff;>Contact Us</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info" style="color: #ffffff;>For inquiries, please contact us at:</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info" style="color: #ffffff;>📞 <strong>Phone:</strong> +91-7889652569</p>', unsafe_allow_html=True)
+    st.markdown('<p class="contact-info" style="color: #ffffff;>📧 <strong>Email:</strong> aamirmir08@gmail.com</p>', unsafe_allow_html=True)
 
     # Contact Button
     contact_button = st.button('Get in Touch', key='contact_button', help="Click here to send your inquiry")
