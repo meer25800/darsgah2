@@ -238,6 +238,35 @@ if choice == "Home":
     # Display Logo
 
     st.markdown('<p class="front-description">جو شخص قرآن کو سمجھ کر اس پر عمل کرتا ہے، وہ نہ صرف دنیاوی کامیابی حاصل کرتا ہے بلکہ آخرت میں بھی فلاح پاتا ہے۔ آئیے قرآن کو اپنے دلوں کی روشنی اور زندگی کا رہنما بنائیں۔"</p>', unsafe_allow_html=True)
+   st.markdown("""
+    <style>
+        /* Marquee text styling */
+        .top-performers {
+            font-size: 22px;
+            color: #ffffff;
+            background: #be5f25;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .top-performers span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-text 10s linear infinite;
+        }
+        
+        /* Animation for scrolling text */
+        @keyframes scroll-text {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+    <div class="top-performers">
+        <span>🏆 Top Performers of the Year: A, B, C, D, E, F, G, H, I, J 🏆</span>
+    </div>
+""", unsafe_allow_html=True)
 
 #student portal
 elif choice == "Student Portal":
