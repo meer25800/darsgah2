@@ -91,7 +91,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Use HTML to ensure proper centering
-st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff; style= "font-size":60px;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
+st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
 menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Contact Us"]
