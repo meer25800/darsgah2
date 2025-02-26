@@ -28,7 +28,7 @@ st.markdown("""
     <style>
         /* Change background color to white */
         .stApp {
-            background-color: white;
+            background-color: #bb25be;
         }
     </style>
 """, unsafe_allow_html=True)
