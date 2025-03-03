@@ -265,9 +265,7 @@ if "students" not in st.session_state:
 
            }
         #class 6th
-            Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
-zindagi
-            Mahun nisa	22/24	30/30	29/30	27/30	25/30	/20	25/09	22/26
+   
         {
                 "ID": "6dtq001",
                 "Name": "Mahun Nisa ",
@@ -291,9 +289,7 @@ zindagi
 
            }, 
 
-             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
-zindagi
-           Ulfat gulzar	27/25	26/29	28/30	24/30	27/30	/22	29/30	23/22
+
         {
                 "ID": "6dtq002",
                 "Name": "Ulfat Gulzar ",
@@ -316,9 +312,7 @@ zindagi
                 }
 
            }, 
-             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
-zindagi
-          Sadiya	22/18	28/30	26/30	30/28	30/30	/21	30/30	23/26
+    
         {
                 "ID": "6dtq003",
                 "Name": "Sadia Showkat",
@@ -341,9 +335,7 @@ zindagi
                 }
 
            }, 
-             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
-zindagi
-      Zehra	30/26	27/30	30/30	24/29	29/30	/30	29/29	25/25
+
         {
                 "ID": "6dtq003",
                 "Name": "Zehra-tul-Nisa",
