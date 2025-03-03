@@ -682,8 +682,12 @@ elif choice == "Student Portal":
                 ])
 
 # Append Total, Percentage, and Result
-                result_text += f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
-
+                #result_text += f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
+                # ✅ Append Total, Percentage, Result, and Position
+                result_text += f"\nTotal: {total_obtained}/{total_max}\n"
+                result_text += f"Percentage: {percentage:.2f}%\n"
+                result_text += f"Result: {result}\n"
+                result_text += f"Position: {student_info.get('Position', 'Not Assigned')}\n"  # Adds Position
             # Download Button
                 st.download_button(label="Download Result",
                                data=result_text,
