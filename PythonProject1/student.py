@@ -579,7 +579,7 @@ elif choice == "Student Portal":
                     # ✅ Format Marks as Separate Lines
                     result_lines.append(
                     
-                        f"<b><span style='color: #ff6d00;'>{subject}:</span></b><br>"
+                        f"<b><span style='color: #ff0094;'>{subject}:</span></b><br>"
                         f"<span style='color: #000000;'>Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}</span><br>"
                         "<hr style='border: 1px solid white;'>"
                     )
@@ -593,7 +593,7 @@ elif choice == "Student Portal":
                 st.markdown(f"""
                 <style>
                 .marks-box {{
-                background: #00ffa1; /* Dark Blue */
+                background: #81c784; /* Dark Blue */
                 color: white; /* White Text */
                 padding: 15px;
                 border-radius: 10px;
@@ -607,9 +607,9 @@ elif choice == "Student Portal":
         <div class="marks-box">
             {' '.join(result_lines)}
             <hr>
-            <b><span style='color: #ff6d00;'>Total:</b> {total_obtained}/{total_max}<br>
-            <b><span style='color: #ff6d00;'>Percentage:</b> {percentage:.2f}%<br>
-            <b><span style='color: #ff6d00;'>Result:</b> {result}
+            <b><span style='color: #ff0094;'>Total:</b> {total_obtained}/{total_max}<br>
+            <b><span style='color: #ff0094;'>Percentage:</b> {percentage:.2f}%<br>
+            <b><span style='color: #ff0094;'>Result:</b> {result}
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
