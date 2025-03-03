@@ -170,25 +170,9 @@ if "students" not in st.session_state:
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
                 }
                
-            },
             
-            {
-                "ID": "102",
-                "Name": "Ayesha Siddiqui",
-                "Age": 14,
-                "Gender": "Female",
-                "Class": "8TH",
-                "Contact": "9876543210",
-                "Marks": {
-                    "QURAN": {"Term 1": {"Obtained": 88, "Max": 100}, "Term 2": {"Obtained": 85, "Max": 100}},
-                    "FIQH": {"Term 1": {"Obtained": 85, "Max": 100}, "Term 2": {"Obtained": 90, "Max": 100}},
-                    "HADEES": {"Term 1": {"Obtained": 82, "Max": 100}, "Term 2": {"Obtained": 88, "Max": 100}},
-                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 90, "Max": 100}, "Term 2": {"Obtained": 88, "Max": 100}},
-                    "USMAL-HUSNA": {"Term 1": {"Obtained": 87, "Max": 100}, "Term 2": {"Obtained": 82, "Max": 100}},
-                    "SEERAT": {"Term 1": {"Obtained": 92, "Max": 100}, "Term 2": {"Obtained": 95, "Max": 100}},
-                    "DUA": {"Term 1": {"Obtained": 88, "Max": 100}, "Term 2": {"Obtained": 84, "Max": 100}},
-                    "TAJWEED": {"Term 1": {"Obtained": 94, "Max": 100}, "Term 2": {"Obtained": 96, "Max": 100}}
-                }
+            
+           
             }
         ]
     )
