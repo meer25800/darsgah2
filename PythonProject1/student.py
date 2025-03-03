@@ -329,7 +329,7 @@ elif choice == "Student Portal":
                 st.write(f"**Total:** {total_obtained}/{total_max}")
                 st.write(f"**Percentage:** {percentage:.2f}%")
                 st.write(f"**Result:** {result}")
-                st.write(f"**Position:** {student_info['Position']}")
+                
                 
 
                 result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
