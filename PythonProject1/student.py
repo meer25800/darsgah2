@@ -660,12 +660,12 @@ elif choice == "Student Portal":
                 ])
 
 # Append Total, Percentage, and Result
-result_text += f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
+                result_text += f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
 
-# Download Button
-st.download_button(label="Download Result",
-                   data=result_text,
-                   file_name=f"Result_{student_info['Name']}.txt")
+            # Download Button
+                st.download_button(label="Download Result",
+                               data=result_text,
+                               file_name=f"Result_{student_info['Name']}.txt")
 
             else:
                 st.write("No marks available yet.")
