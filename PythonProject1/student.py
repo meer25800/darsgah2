@@ -242,7 +242,7 @@ if "students" not in st.session_state:
                 }
 
            },
-        {
+                {
                 "ID": "7dtq004",
                 "Name": "Muzamil Bashir ",
                 "Parentage": "Bashir Ahmad Khan",
@@ -263,7 +263,7 @@ if "students" not in st.session_state:
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}}
                 }
 
-           }
+           },
         #class 6th
    
         {
