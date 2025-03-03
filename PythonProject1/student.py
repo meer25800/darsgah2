@@ -579,12 +579,9 @@ elif choice == "Student Portal":
 
                      # ✅ Format Marks as Separate Lines
                     result_lines.append(
-                                    f"""
-                                    <b><span style='color: #ff3d00;'>{subject}:</span></b><br> 
-                                    <span style='color: #000000;'>Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}</span><br>
-                                    <hr style='border: 1px solid white;'>
-                                    """
-                                )
+                        f"<b><span style='color: #ff3d00;'>{subject}:</b><br> <span style='color: #000000;'>  Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}<br>
+                        <hr style='border: 1px solid white;'>"
+                    )
 
 
                 percentage = (total_obtained / total_max) * 100
