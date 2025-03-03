@@ -555,7 +555,7 @@ elif choice == "Student Portal":
                     <b>Parentage:</b> {student_info['Parentage']}<br>
                     <b>Age:</b> {student_info['Age']}<br>
                     <b>Gender:</b> {student_info['Gender']}<br>
-                    <b>Position:</b> {student_info.get('Position', 'Not Assigned')}<br>
+                    
                 </div>
             """, unsafe_allow_html=True) 
 
@@ -610,6 +610,7 @@ elif choice == "Student Portal":
             <b><span style='color: #ff0094;'>Total:</b> {total_obtained}/{total_max}<br>
             <b><span style='color: #ff0094;'>Percentage:</b> {percentage:.2f}%<br>
             <b><span style='color: #ff0094;'>Result:</b> {result}
+            <b><span style='color: #ff0094;'>Position:</span></b> {student_info.get('Position', 'Not Assigned')}
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
