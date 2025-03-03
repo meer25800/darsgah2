@@ -98,6 +98,20 @@ st.markdown("""
 st.markdown('<div class="front-title-container"><div class="front-title" style="color: #ffffff;"> درسگاہ تعلیم القرآن والحدیث  کونگم ڈارہ </div></div>', unsafe_allow_html=True)
 
 # Navigation menu
+# Apply Custom CSS for White Sidebar Text
+st.markdown("""
+    <style>
+        /* Change the sidebar text color */
+        div[data-testid="stSidebar"] {
+            color: white !important;
+        }
+        
+        /* Change the selectbox text color inside sidebar */
+        div[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] {
+            color: white !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
 menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Topper List","Annual Programme","Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
@@ -509,16 +523,6 @@ if choice == "Home":
 
 #student portal
 elif choice == "Student Portal":
-    
-    # Apply Custom CSS for White Input Text
-    st.markdown("""
-    <style>
-        /* Change text color inside input box */
-        .stTextInput > div > div > input {
-            color: white !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
     st.header("Student Login")
     student_id = st.text_input("Enter Your Student ID")
     login_button = st.button("Login")
