@@ -486,43 +486,35 @@ if choice == "Home":
                 margin-top: 20px;
             }
             /* Container to hide overflow */
-        .scrolling-container {
-            width: 100%;
-            overflow: hidden;
-            position: relative;
-            background-color: #000; /* Optional: Background for visibility */
-            white-space: nowrap;
-        }
+       
         
         /* Moving text */
         .top-performers-text {
             display: inline-block;
-            position: absolute;
-            white-space: nowrap;
-            animation: scroll-text 20s linear infinite; /* Adjust speed by changing '20s' */
+            padding-left: 100%;
+            animation: scroll-text 20s linear infinite; /* Increased duration from 10s to 20s */
             font-size: 22px;
             font-weight: bold;
-            color: white; /* Change color as needed */
         }
         
-        /* Animation for continuous rolling effect */
+        /* Animation for scrolling text */
         @keyframes scroll-text {
-            from { transform: translateX(100%); }  
-            to { transform: translateX(-100%); } 
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
         }
 
         </style>
-        <div class="scrolling-container">
+       
         <div class="top-performers-container">
             <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
            
+     
         </div>
-        </div>
-        <div class="scrolling-container">
+        
         <div class="top-performers-container">
             <span class="top-performers-text">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, TOIBA RASHID 🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
-        </div>
+      
         </div>
     """, unsafe_allow_html=True)
  
