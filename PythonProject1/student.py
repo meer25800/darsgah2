@@ -652,10 +652,21 @@ elif choice == "Student Portal":
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
-                result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
-                st.download_button(label="Download Result",
-                                   data=result_text,
-                                   file_name=f"Result_{student_info['Name']}.txt")
+                # Prepare plain text result for download (without HTML tags)
+                result_text = "\n".join([
+                    f"{subject}:\nTerm 1: {scores.get('Term 1', {}).get('Obtained', 0)}/{scores.get('Term 1', {}).get('Max', 0)}"
+                    f"  +  Term 2: {scores.get('Term 2', {}).get('Obtained', 0)}/{scores.get('Term 2', {}).get('Max', 0)}\n"
+                    for subject, scores in marks.items()
+                ])
+
+# Append Total, Percentage, and Result
+result_text += f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
+
+# Download Button
+st.download_button(label="Download Result",
+                   data=result_text,
+                   file_name=f"Result_{student_info['Name']}.txt")
+
             else:
                 st.write("No marks available yet.")
         else:
