@@ -876,7 +876,11 @@ elif choice == "Syllabus":
 
 #topper list
 elif choice == "Topper List":
-    st.header("Topper List")  
+    
+    st.markdown(
+        "<h2 style='text-align: center; color: white;'>Topper List</h2>",
+        unsafe_allow_html=True
+    ) 
      
     
 
