@@ -550,7 +550,7 @@ elif choice == "Student Portal":
              # ✅ Apply White Color to Student Information
             st.markdown(f"""
                 <div style="color: white; font-size: 20px; background-color: #283593; padding: 15px; border-radius: 10px;">
-                    <bstyle="color: red;">Welcome, {student_info['Name']}!</b><br>
+                    <b style="color: red;">Welcome, {student_info['Name']}!</b><br>
                     <b>Class:</b> {student_info['Class']}<br>
                     <b>Parentage:</b> {student_info['Parentage']}<br>
                     <b>Age:</b> {student_info['Age']}<br>
