@@ -273,7 +273,7 @@ if "students" not in st.session_state:
         {
                 "ID": "6dtq001",
                 "Name": "Mahun Nisa ",
-                "Parentage": "Not available",
+                "Parentage": "Siraj-ul-Muneer",
                 "Age": 12,
                 "Gender": "Female",
                 "Class": "6TH",
@@ -342,7 +342,7 @@ if "students" not in st.session_state:
 
         {
                 "ID": "6dtq004",
-                "Name": "Zehra-tul-Nisa",
+                "Name": "Zehrat-ul-Nisa",
                 "Parentage": "Zahoor Ahmad Bhat",
                 "Age": 12,
                 "Gender": "Female",
