@@ -173,7 +173,7 @@ if "students" not in st.session_state:
             
             
            
-            };
+            },
            
 
            {
@@ -197,7 +197,7 @@ if "students" not in st.session_state:
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
                 }
 
-           };
+           },
          {
                 "ID": "7dtq002",
                 "Name": "Nazima Mushtaq ",
@@ -219,7 +219,7 @@ if "students" not in st.session_state:
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
                 }
 
-           };
+           },
     {
                 "ID": "7dtq003",
                 "Name": "Musaib Rahim ",
@@ -241,7 +241,7 @@ if "students" not in st.session_state:
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}}
                 }
 
-           };
+           },
         {
                 "ID": "7dtq004",
                 "Name": "Muzamil Bashir ",
