@@ -297,7 +297,7 @@ elif choice == "Student Portal":
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
             st.write(f"**Parentage:** {student_info['Parentage']}")
-             st.write(f"**Age:** {student_info['Age']}")  # Display Age
+            st.write(f"**Age:** {student_info['Age']}")  # Display Age
             st.write(f"**Gender:** {student_info['Gender']}")  # Display Gender
             st.write(f"**Position:** {student_info.get('Position', 'Not Assigned')}")  # Display Position
             #st.write(f"**Position:** {student_info['Position']}")  # Added Position
