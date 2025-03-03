@@ -504,7 +504,7 @@ if choice == "Home":
            
         </div>
         <div class="top-performers-container">
-            <span class="top-performers-text">🎓 Passout Students: X, Y, Z, A, B, C 🎓</span>
+            <span class="top-performers-text">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, TOIBA RASHID 🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
         </div>
     """, unsafe_allow_html=True)
