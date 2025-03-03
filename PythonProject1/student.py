@@ -109,7 +109,7 @@ if "students" not in st.session_state:
                 "Age": 16,
                 "Gender": "Male",
                 "Class": "8TH",
-                "Position":"SECOND",
+                "Position":"Second",
 
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
@@ -132,7 +132,7 @@ if "students" not in st.session_state:
                 "Age": 16,
                 "Gender": "Male",
                 "Class": "8TH",
-                "Position":"SECOND",
+                "Position":"Third",
 
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
@@ -154,9 +154,9 @@ if "students" not in st.session_state:
                 "Name": "Muqadas Shabaan ",
                 "Parentage": "Mohammad Shabaan Ganaie",
                 "Age": 16,
-                "Gender": "Male",
+                "Gender": "Female",
                 "Class": "8TH",
-                "Position":"SECOND",
+                "Position":"first",
 
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
@@ -173,7 +173,101 @@ if "students" not in st.session_state:
             
             
            
-            }
+            };
+           
+
+           {
+                "ID": "7dtq001",
+                "Name": "Toiba Rashid ",
+                "Parentage": "Abdul Rashid Mir",
+                "Age": 16,
+                "Gender": "Female",
+                "Class": "7TH",
+                "Position":"First",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
+
+           };
+         {
+                "ID": "7dtq002",
+                "Name": "Nazima Mushtaq ",
+                "Parentage": "Mushtaq Ahmad Bhat",
+                "Age": 14,
+                "Gender": "Female",
+                "Class": "7TH",
+                "Position":"Second",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 23, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
+
+           };
+    {
+                "ID": "7dtq003",
+                "Name": "Musaib Rahim ",
+                "Parentage": "Abdul Rahim Joo",
+                "Age": 14,
+                "Gender": "Male",
+                "Class": "7TH",
+                "Position":"Third",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 23, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 24, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}}
+                }
+
+           };
+        {
+                "ID": "7dtq004",
+                "Name": "Muzamil Bashir ",
+                "Parentage": "Bashir Ahmad Khan",
+                "Age": 14,
+                "Gender": "Male",
+                "Class": "7TH",
+                "Position":"NULL",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 13, "Max": 30}, "Term 2": {"Obtained": 16, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 13, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 18, "Max": 30}, "Term 2": {"Obtained": 16, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 10, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 13, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 10, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 11, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}}
+                }
+
+           }
+        
+
+
+
         ]
     )
 
