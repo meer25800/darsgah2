@@ -507,7 +507,6 @@ if choice == "Home":
     """, unsafe_allow_html=True)
  
 
-
 #student portal
 elif choice == "Student Portal":
     st.header("Student Login")
@@ -519,6 +518,93 @@ elif choice == "Student Portal":
 
         if not student_data.empty:
             student_info = student_data.iloc[0]
+
+            # 📌 Apply White Text Styling Here
+            st.markdown("""
+                <style>
+                    .student-details, .student-details p, .marks-section, .marks-section p {
+                        color: white !important;  /* Ensures text color is white */
+                        font-size: 18px;
+                    }
+                    .marks-table {
+                        width: 100%;
+                        border-collapse: collapse;
+                        margin-top: 20px;
+                    }
+                    .marks-table th, .marks-table td {
+                        border: 1px solid #ffffff;
+                        padding: 10px;
+                        text-align: center;
+                        color: white;  /* Makes marks white */
+                    }
+                    .marks-table th {
+                        background: #3949ab;  /* Dark blue for table headers */
+                    }
+                    .marks-table tr:nth-child(even) {
+                        background: #3f51b5;  /* Alternate row color */
+                    }
+                </style>
+            """, unsafe_allow_html=True)
+
+            # ✅ Student Information
+            st.subheader(f"Welcome, {student_info['Name']}!")
+            st.write(f"**Class:** {student_info['Class']}")
+            st.write(f"**Parentage:** {student_info['Parentage']}")
+            st.write(f"**Age:** {student_info['Age']}")
+            st.write(f"**Gender:** {student_info['Gender']}")
+            st.write(f"**Position:** {student_info.get('Position', 'Not Assigned')}")  
+
+            st.subheader("Marks Sheet")
+            marks = student_info['Marks']
+            if marks:
+                total_obtained = 0
+                total_max = 0
+                result_lines = []
+
+                for subject, scores in marks.items():
+                    term1_obtained = scores.get("Term 1", {}).get("Obtained", 0)
+                    term1_max = scores.get("Term 1", {}).get("Max", 0)
+                    term2_obtained = scores.get("Term 2", {}).get("Obtained", 0)
+                    term2_max = scores.get("Term 2", {}).get("Max", 0)
+
+                    total_obtained += term1_obtained + term2_obtained
+                    total_max += term1_max + term2_max
+
+                    result_lines.append(
+                        f"{subject}\n  - Term 1: {term1_obtained}/{term1_max}\n  - Term 2: {term2_obtained}/{term2_max}\n"
+                    )
+
+                percentage = (total_obtained / total_max) * 100
+                result = "Pass" if percentage >= 40 else "Fail"
+
+                # ✅ Display Marks in White Text
+                st.markdown("<div class='marks-section'>" + "<br>".join(result_lines) + "</div>", unsafe_allow_html=True)
+                st.write(f"**Total:** {total_obtained}/{total_max}")
+                st.write(f"**Percentage:** {percentage:.2f}%")
+                st.write(f"**Result:** {result}")
+
+                # ✅ Download Result Button
+                result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
+                st.download_button(label="Download Result",
+                                   data=result_text,
+                                   file_name=f"Result_{student_info['Name']}.txt")
+            else:
+                st.write("No marks available yet.")
+        else:
+            st.error("Student ID not found. Please try again.")
+
+#student portal
+"""elif choice == "Student Portal":
+    st.header("Student Login")
+    student_id = st.text_input("Enter Your Student ID")
+    login_button = st.button("Login")
+
+    if login_button:
+        student_data = st.session_state["students"][st.session_state["students"]["ID"] == student_id]
+
+        if not student_data.empty:
+            student_info = student_data.iloc[0]
+            
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
             st.write(f"**Parentage:** {student_info['Parentage']}")
@@ -569,7 +655,7 @@ elif choice == "Student Portal":
 
                 
         else:
-            st.error("Student ID not found. Please try again.")
+            st.error("Student ID not found. Please try again.")"""
             # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
