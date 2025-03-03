@@ -547,12 +547,17 @@ elif choice == "Student Portal":
             """, unsafe_allow_html=True)
 
             # ✅ Student Information
-            st.subheader(f"Welcome, {student_info['Name']}!")
-            st.write(f"**Class:** {student_info['Class']}")
-            st.write(f"**Parentage:** {student_info['Parentage']}")
-            st.write(f"**Age:** {student_info['Age']}")
-            st.write(f"**Gender:** {student_info['Gender']}")
-            st.write(f"**Position:** {student_info.get('Position', 'Not Assigned')}")  
+             # ✅ Apply White Color to Student Information
+            st.markdown(f"""
+                <div style="color: white; font-size: 20px; background-color: #283593; padding: 15px; border-radius: 10px;">
+                    <b>Welcome, {student_info['Name']}!</b><br>
+                    <b>Class:</b> {student_info['Class']}<br>
+                    <b>Parentage:</b> {student_info['Parentage']}<br>
+                    <b>Age:</b> {student_info['Age']}<br>
+                    <b>Gender:</b> {student_info['Gender']}<br>
+                    <b>Position:</b> {student_info.get('Position', 'Not Assigned')}<br>
+                </div>
+            """, unsafe_allow_html=True) 
 
             st.subheader("Marks Sheet")
             marks = student_info['Marks']
