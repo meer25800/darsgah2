@@ -593,7 +593,7 @@ elif choice == "Student Portal":
                 st.markdown(f"""
                 <style>
                 .marks-box {{
-                background: #81c784; /* Dark Blue */
+                background: #b7ff00; /* Dark Blue */
                 color: white; /* White Text */
                 padding: 15px;
                 border-radius: 10px;
@@ -601,17 +601,15 @@ elif choice == "Student Portal":
                 text-align: left;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
             }}
-            .marks-box hr {{
-                border: 1px solid #ffffff;
-            }}
+            
         </style>
 
         <div class="marks-box">
             {' '.join(result_lines)}
             <hr>
-            <b>Total:</b> {total_obtained}/{total_max}<br>
-            <b>Percentage:</b> {percentage:.2f}%<br>
-            <b>Result:</b> {result}
+            <b><span style='color: #ff3d00;'>Total:</b> {total_obtained}/{total_max}<br>
+            <b><span style='color: #ff3d00;'>Percentage:</b> {percentage:.2f}%<br>
+            <b><span style='color: #ff3d00;'>Result:</b> {result}
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
