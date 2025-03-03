@@ -585,12 +585,31 @@ elif choice == "Student Portal":
                 result = "Pass" if percentage >= 40 else "Fail"
 
                 # ✅ Display Marks in White Text
-                st.markdown("<div class='marks-section'>" + "<br>".join(result_lines) + "</div>", unsafe_allow_html=True)
-                st.write("******************************")
-                st.write(f"**Total:** {total_obtained}/{total_max}")
-                st.write(f"**Percentage:** {percentage:.2f}%")
-                st.write(f"**Result:** {result}")
+                # ✅ Wrap Everything Inside a Styled Box
+                st.markdown(f"""
+                <style>
+                .marks-box {{
+                background: #1a237e; /* Dark Blue */
+                color: white; /* White Text */
+                padding: 15px;
+                border-radius: 10px;
+                font-size: 18px;
+                text-align: left;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            }}
+            .marks-box hr {{
+                border: 1px solid #ffffff;
+            }}
+        </style>
 
+        <div class="marks-box">
+            {' '.join(result_lines)}
+            <hr>
+            <b>Total:</b> {total_obtained}/{total_max}<br>
+            <b>Percentage:</b> {percentage:.2f}%<br>
+            <b>Result:</b> {result}
+        </div>
+    """, unsafe_allow_html=True)
                 # ✅ Download Result Button
                 result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
                 st.download_button(label="Download Result",
