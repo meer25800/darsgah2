@@ -485,19 +485,32 @@ if choice == "Home":
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
                 margin-top: 20px;
             }
-            .top-performers-text {
-                display: inline-block;
-                padding-left: 100%;
-                animation: scroll-text 25s linear infinite;
-                font-size: 22px;
-                font-weight: bold;
-            }
-            
-            /* Animation for scrolling text */
-            @keyframes scroll-text {
-                0% { transform: translateX(100%); }
-                100% { transform: translateX(-100%); }
-            }
+            /* Container to hide overflow */
+.scrolling-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: #000; /* Optional: Background for visibility */
+    white-space: nowrap;
+}
+
+/* Moving text */
+.top-performers-text {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+    animation: scroll-text 20s linear infinite; /* Adjust speed by changing '20s' */
+    font-size: 22px;
+    font-weight: bold;
+    color: white; /* Change color as needed */
+}
+
+/* Animation for continuous rolling effect */
+@keyframes scroll-text {
+    from { transform: translateX(100%); }  
+    to { transform: translateX(-100%); } 
+}
+
         </style>
         <div class="top-performers-container">
             <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
