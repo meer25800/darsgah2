@@ -581,6 +581,7 @@ elif choice == "Student Portal":
 
                 # ✅ Display Marks in White Text
                 st.markdown("<div class='marks-section'>" + "<br>".join(result_lines) + "</div>", unsafe_allow_html=True)
+                st.write("******************************")
                 st.write(f"**Total:** {total_obtained}/{total_max}")
                 st.write(f"**Percentage:** {percentage:.2f}%")
                 st.write(f"**Result:** {result}")
