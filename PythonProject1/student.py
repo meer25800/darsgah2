@@ -778,6 +778,13 @@ elif choice == "Admin Portal":
         st.error("Incorrect password.")
 # passout students
 elif choice == "Passout 2024":
+    st.markdown(
+        """
+        <h2 style="text-align: center; color: white;">Passout Students - 2024</h2>
+        """,
+        unsafe_allow_html=True
+    )
+    
     st.header("Passout Students - 2024")
 
     # List of Passout Students
@@ -831,6 +838,12 @@ elif choice == "Passout 2024":
     
  # Add this import to fetch the image from the URL
 elif choice == "Syllabus":
+     st.markdown(
+        """
+        <h2 style="text-align: center; color: white;">Class Syllabus</h2>
+        """,
+        unsafe_allow_html=True
+    )
     st.header("Class Syllabus")
     
     # Class options
@@ -872,6 +885,12 @@ elif choice == "Syllabus":
 
 #topper list
 elif choice == "Topper List":
+     st.markdown(
+        """
+        <h2 style="text-align: center; color: white;">Topper List</h2>
+        """,
+        unsafe_allow_html=True
+    )
     st.header("Topper List")
 
     # List of Toppers
