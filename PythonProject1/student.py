@@ -578,7 +578,7 @@ elif choice == "Student Portal":
 
                      # ✅ Format Marks as Separate Lines
                     result_lines.append(
-                        f"<b>{subject}:</b><br>   Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}<br>"
+                        f"<b style="color: red;">{subject}:</b><br>   Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}<br>"
                     )
 
                 percentage = (total_obtained / total_max) * 100
@@ -589,7 +589,7 @@ elif choice == "Student Portal":
                 st.markdown(f"""
                 <style>
                 .marks-box {{
-                background: #1a237e; /* Dark Blue */
+                background: #81c784; /* Dark Blue */
                 color: white; /* White Text */
                 padding: 15px;
                 border-radius: 10px;
