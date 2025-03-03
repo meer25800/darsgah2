@@ -566,14 +566,14 @@ elif choice == "Student Portal":
                     term1_max = scores.get("Term 1", {}).get("Max", 0)
                     term2_obtained = scores.get("Term 2", {}).get("Obtained", 0)
                     term2_max = scores.get("Term 2", {}).get("Max", 0)
-                    print(end=" ")
+                    
 
                     total_obtained += term1_obtained + term2_obtained
                     total_max += term1_max + term2_max
 
                      # ✅ Format Marks as Separate Lines
                     result_lines.append(
-                        f"<b>{subject}</b><br>  - Term 1: {term1_obtained}/{term1_max}<br>  - Term 2: {term2_obtained}/{term2_max}<br><br>"
+                        f"<b>{subject}</b><br>  - Term 1: {term1_obtained}/{term1_max} and  - Term 2: {term2_obtained}/{term2_max}<br>"
                     )
 
                 percentage = (total_obtained / total_max) * 100
