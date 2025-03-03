@@ -264,7 +264,110 @@ if "students" not in st.session_state:
                 }
 
            }
-        
+        #class 6th
+            Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
+zindagi
+            Mahun nisa	22/24	30/30	29/30	27/30	25/30	/20	25/09	22/26
+        {
+                "ID": "6dtq001",
+                "Name": "Mahun Nisa ",
+                "Parentage": "Not available",
+                "Age": 12,
+                "Gender": "Female",
+                "Class": "6TH",
+                "Position":"NULL",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}}
+                }
+
+           }, 
+
+             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
+zindagi
+           Ulfat gulzar	27/25	26/29	28/30	24/30	27/30	/22	29/30	23/22
+        {
+                "ID": "6dtq002",
+                "Name": "Ulfat Gulzar ",
+                "Parentage": "Gulzar Ahmad Bhat",
+                "Age": 14,
+                "Gender": "Female",
+                "Class": "6TH",
+                "Position":"Third",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 24, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}}
+                }
+
+           }, 
+             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
+zindagi
+          Sadiya	22/18	28/30	26/30	30/28	30/30	/21	30/30	23/26
+        {
+                "ID": "6dtq003",
+                "Name": "Sadia Showkat",
+                "Parentage": "Showkat Ahmad Mir",
+                "Age": 12,
+                "Gender": "Female",
+                "Class": "6TH",
+                "Position":"Second",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 18, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 21, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
+
+           }, 
+             Name	hadees	dua	quran	fiqh	tajweed	Asmal husna	Seerat/aslaaf	Adaabi
+zindagi
+      Zehra	30/26	27/30	30/30	24/29	29/30	/30	29/29	25/25
+        {
+                "ID": "6dtq003",
+                "Name": "Zehra-tul-Nisa",
+                "Parentage": "Zahoor Ahmad Bhat",
+                "Age": 12,
+                "Gender": "Female",
+                "Class": "6TH",
+                "Position":"First",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 24, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
+
+           }
+
+
 
 
 
