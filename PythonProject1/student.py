@@ -566,6 +566,7 @@ elif choice == "Student Portal":
                     term1_max = scores.get("Term 1", {}).get("Max", 0)
                     term2_obtained = scores.get("Term 2", {}).get("Obtained", 0)
                     term2_max = scores.get("Term 2", {}).get("Max", 0)
+                    print(end=" ")
 
                     total_obtained += term1_obtained + term2_obtained
                     total_max += term1_max + term2_max
@@ -593,7 +594,10 @@ elif choice == "Student Portal":
         else:
             st.error("Student ID not found. Please try again.")
 
+#student
+#student portal
 
+            # Admin Portal
 # Admin Portal
 elif choice == "Admin Portal":
     st.header("Admin Portal")
