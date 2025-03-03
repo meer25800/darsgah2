@@ -785,7 +785,7 @@ elif choice == "Passout 2024":
         unsafe_allow_html=True
     )
     
-    st.header("Passout Students - 2024")
+    
 
     # List of Passout Students
     passout_students = [
@@ -844,7 +844,7 @@ elif choice == "Syllabus":
         """,
         unsafe_allow_html=True
     )
-    st.header("Class Syllabus")
+    
     
     # Class options
     classes = [f"Class {i}{'st' if i == 1 else 'nd' if i == 2 else 'rd' if i == 3 else 'th'}" for i in range(1, 9)]
@@ -891,7 +891,7 @@ elif choice == "Topper List":
         """,
         unsafe_allow_html=True
     )
-    st.header("Topper List")
+    
 
     # List of Toppers
    
