@@ -60,6 +60,28 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
+#for student id color formatting
+st.markdown(
+    f"""
+    <style>
+        .student-details {{
+            color: white;  /* Text color */
+            font-size: 18px; 
+            font-weight: bold;
+        }}
+    </style>
+
+    <div class="student-details">
+        <p>📖 <strong>Class:</strong> {student_info['Class']}</p>
+        <p>👨‍👩‍👦 <strong>Parentage:</strong> {student_info['Parentage']}</p>
+        <p>🎂 <strong>Age:</strong> {student_info['Age']}</p>
+        <p>🚻 <strong>Gender:</strong> {student_info['Gender']}</p>
+        <p>🏆 <strong>Position:</strong> {student_info.get('Position', 'Not Assigned')}</p>
+    </div>
+    """, unsafe_allow_html=True
+)
+
+
 # Inject custom CSS to handle centering properly
 st.markdown("""
     <style>
