@@ -667,10 +667,10 @@ elif choice == "Student Portal":
         <div class="marks-box">
             {' '.join(result_lines)}
             <hr>
-            <b><span style='color: #ff0041;'>Total:</b> {total_obtained}/{total_max}<br>
-            <b><span style='color: #ff0041;'>Percentage:</b> {percentage:.2f}%<br>
-            <b><span style='color: #ff0041;'>Result:</b> {result}</b><br>
-            <b><span style='color: #ff0041;'>Position:</span></b> {student_info.get('Position', 'Not Assigned')}
+            <b><span style='color: #ff0041;'>Total:</b> <span style='color: #5200ff;'>{total_obtained}/{total_max}<br>
+            <b><span style='color: #ff0041;'>Percentage:</b> <span style='color: #5200ff;'>{percentage:.2f}%<br>
+            <b><span style='color: #ff0041;'>Result:</b><span style='color: #5200ff;'> {result}</b><br>
+            <b><span style='color: #ff0041;'>Position:</span></b><span style='color: #5200ff;'> {student_info.get('Position', 'Not Assigned')}
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
