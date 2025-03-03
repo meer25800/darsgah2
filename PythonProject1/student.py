@@ -579,7 +579,7 @@ elif choice == "Student Portal":
                     # ✅ Format Marks as Separate Lines
                     result_lines.append(
                     
-                        f"<b><span style='color: #ff8f00;'>{subject}:</span></b><br>"
+                        f"<b><span style='color: #5200ff;'>{subject}:</span></b><br>"
                         f"<span style='color: #000000;'>Term 1: {term1_obtained}/{term1_max}  +   Term 2: {term2_obtained}/{term2_max}</span><br>"
                         "<hr style='border: 1px solid white;'>"
                     )
