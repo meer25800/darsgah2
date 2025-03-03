@@ -778,7 +778,7 @@ elif choice == "Admin Portal":
         st.error("Incorrect password.")
 # passout students
 elif choice == "Passout 2024":
-     st.markdown(
+    st.markdown(
         "<h2 style='text-align: center; color: white;'>Passout Students</h2>",
         unsafe_allow_html=True
     ) 
@@ -788,14 +788,7 @@ elif choice == "Passout 2024":
     
 
     # List of Passout Students
-    passout_students = [
-        "Ahmed Khan",
-        "Ayesha Siddiqui",
-        "Ali Raza",
-        "Fatima Noor",
-        "Sara Ahmed",
-        "Zain Ul Abideen"
-    ]
+    
 
     # Display Passout Students
     st.markdown("""
