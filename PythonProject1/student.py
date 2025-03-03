@@ -562,7 +562,10 @@ elif choice == "Student Portal":
                 </div>
             """, unsafe_allow_html=True) 
 
-            st.subheader("Marks Sheet")
+            st.markdown("""
+            <h2 style="color: white; text-align: center;">Marks Sheet</h2>
+        """, unsafe_allow_html=True)
+
             marks = student_info['Marks']
             if marks:
                 total_obtained = 0
@@ -612,7 +615,7 @@ elif choice == "Student Portal":
             <hr>
             <b><span style='color: #ff0041;'>Total:</b> {total_obtained}/{total_max}<br>
             <b><span style='color: #ff0041;'>Percentage:</b> {percentage:.2f}%<br>
-            <b><span style='color: #ff0041;'>Result:</b> {result}</b>
+            <b><span style='color: #ff0041;'>Result:</b> {result}</b><br>
             <b><span style='color: #ff0041;'>Position:</span></b> {student_info.get('Position', 'Not Assigned')}
         </div>
     """, unsafe_allow_html=True)
