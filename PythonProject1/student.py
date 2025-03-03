@@ -295,8 +295,8 @@ elif choice == "Student Portal":
             student_info = student_data.iloc[0]
             st.subheader(f"Welcome, {student_info['Name']}!")
             st.write(f"**Class:** {student_info['Class']}")
-            st.write(f"**Contact:** {student_info['Contact']}")
-            st.write(f"**Position:** {student_info.get('Position', 'Not Assigned')}")  # Added Position
+            st.write(f"**Parentage:** {student_info['Parentage']}")
+            st.write(f"**Position:** {student_info['Position']}")  # Added Position
             
 
             st.subheader("Marks Sheet")
@@ -328,6 +328,7 @@ elif choice == "Student Portal":
                 st.write(f"**Total:** {total_obtained}/{total_max}")
                 st.write(f"**Percentage:** {percentage:.2f}%")
                 st.write(f"**Result:** {result}")
+                st.write(f"**Position:** {student_info['Position']}")
                 
 
                 result_text = "\n".join(result_lines) + f"\nTotal: {total_obtained}/{total_max}\nPercentage: {percentage:.2f}%\nResult: {result}"
