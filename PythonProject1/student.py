@@ -516,26 +516,26 @@ elif choice == "Student Portal":
     
     # Apply Custom CSS for White Text in Header and Input Label
     # Custom CSS to make the text white
-st.markdown("""
-    <style>
-        /* Make the Student Login title white */
-        .custom-header {
-            color: white;
-            font-size: 26px;
-            font-weight: bold;
-            text-align: center;
-        }
-
-        /* Make the "Enter Your Student ID" label white */
-        .custom-label {
-            color: white;
-            font-size: 18px;
-            font-weight: bold;
-            display: block;
-            margin-bottom: 5px;
-        }
-    </style>
-""", unsafe_allow_html=True)
+    st.markdown("""
+        <style>
+            /* Make the Student Login title white */
+            .custom-header {
+                color: white;
+                font-size: 26px;
+                font-weight: bold;
+                text-align: center;
+            }
+    
+            /* Make the "Enter Your Student ID" label white */
+            .custom-label {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                display: block;
+                margin-bottom: 5px;
+            }
+        </style>
+    """, unsafe_allow_html=True)
 
 # Custom White Header
     st.markdown('<p class="custom-header">Student Login</p>', unsafe_allow_html=True)
