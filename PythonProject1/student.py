@@ -99,19 +99,8 @@ st.markdown('<div class="front-title-container"><div class="front-title" style="
 
 # Navigation menu
 # Apply Custom CSS for White Sidebar Text
-st.markdown("""
-    <style>
-        /* Change the sidebar text color */
-        div[data-testid="stSidebar"] {
-            color: white !important;
-        }
-        
-        /* Change the selectbox text color inside sidebar */
-        div[data-testid="stSidebar"] .stSelectbox div[data-baseweb="select"] {
-            color: white !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
+
+
 menu = ["Home", "Student Portal", "Admin Portal", "Syllabus", "Passout 2024","Topper List","Annual Programme","Contact Us"]
 
 choice = st.sidebar.selectbox("Search Here", menu)
