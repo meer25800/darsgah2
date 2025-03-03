@@ -103,21 +103,23 @@ if "students" not in st.session_state:
     st.session_state["students"] = pd.DataFrame(
         [
             {
-                "ID": "101",
-                "Name": "Ahmed Khan",
-                "Age": 12,
+                "ID": "8dtq001",
+                "Name": "Aftab Shabir",
+                "Parentage": "Shabir Ahmad Mir",
+                "Age": 16,
                 "Gender": "Male",
-                "Class": "6TH",
-                "Contact": "1234567890",
+                "Class": "8TH",
+
                 "Marks": {
-                    "QURAN": {"Term 1": {"Obtained": 85, "Max": 100}, "Term 2": {"Obtained": 88, "Max": 100}},
-                    "FIQH": {"Term 1": {"Obtained": 90, "Max": 100}, "Term 2": {"Obtained": 85, "Max": 100}},
-                    "HADEES": {"Term 1": {"Obtained": 78, "Max": 100}, "Term 2": {"Obtained": 80, "Max": 100}},
-                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 88, "Max": 100}, "Term 2": {"Obtained": 90, "Max": 100}},
-                    "USMAL-HUSNA": {"Term 1": {"Obtained": 92, "Max": 100}, "Term 2": {"Obtained": 85, "Max": 100}},
-                    "SEERAT": {"Term 1": {"Obtained": 80, "Max": 100}, "Term 2": {"Obtained": 90, "Max": 100}},
-                    "DUA": {"Term 1": {"Obtained": 85, "Max": 100}, "Term 2": {"Obtained": 82, "Max": 100}},
-                    "TAJWEED": {"Term 1": {"Obtained": 95, "Max": 100}, "Term 2": {"Obtained": 93, "Max": 100}}
+                    "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
                 }
             },
             {
