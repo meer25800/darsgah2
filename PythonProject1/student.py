@@ -512,23 +512,9 @@ if choice == "Home":
 
 #student portal
 # Apply Custom CSS for White Text in Header and Input Label
-st.markdown("""
-    <style>
-        /* Make the "Student Login" header white */
-        .stMarkdown h1 {
-            color: white !important;
-        }
-
-        /* Make the "Enter Your Student ID" label white */
-        label[data-testid="stTextInputLabel"] {
-            color: white !important;
-        }
-    </style>
-""", unsafe_allow_html=True)
-
-# Student Portal
-    st.header("Student Login")  # This will now be white
-    student_id = st.text_input("Enter Your Student ID")  # The label will be white
+elif choice == "Student Portal":
+    st.header("Student Login")
+    student_id = st.text_input("Enter Your Student ID")
     login_button = st.button("Login")
 
 
