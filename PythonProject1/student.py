@@ -527,9 +527,9 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Student Portal
-st.header("Student Login")  # This will now be white
-student_id = st.text_input("Enter Your Student ID")  # The label will be white
-login_button = st.button("Login")
+    st.header("Student Login")  # This will now be white
+    student_id = st.text_input("Enter Your Student ID")  # The label will be white
+    login_button = st.button("Login")
 
 
 
