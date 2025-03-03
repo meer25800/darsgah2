@@ -198,7 +198,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
@@ -220,7 +220,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
@@ -242,7 +242,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 24, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}}
@@ -264,7 +264,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 18, "Max": 30}, "Term 2": {"Obtained": 16, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 10, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 13, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 13, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 10, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 11, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}}
@@ -288,7 +288,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 20, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 10, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}}
@@ -312,7 +312,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 22, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}}
@@ -335,7 +335,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 18, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 23, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 21, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 28, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
@@ -358,7 +358,7 @@ if "students" not in st.session_state:
                     "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 26, "Max": 30}},
                     "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
                     "USMAL-HUSNA": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
-                    "SEERAT/Hamare-Aslaaf": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
+                    "SEERAT/HAMARE-ASLAAF": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 29, "Max": 30}},
                     "DUA": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
