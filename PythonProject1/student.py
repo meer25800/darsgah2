@@ -109,6 +109,7 @@ if "students" not in st.session_state:
                 "Age": 16,
                 "Gender": "Male",
                 "Class": "8TH",
+                "Position":"SECOND",
 
                 "Marks": {
                     "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
@@ -120,8 +121,8 @@ if "students" not in st.session_state:
                     "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
                     "TAJWEED": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
-                },
-                "Position":"SECOND"
+                }
+               
             },
             {
                 "ID": "102",
