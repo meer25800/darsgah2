@@ -509,6 +509,16 @@ if choice == "Home":
 
 #student portal
 elif choice == "Student Portal":
+    
+    # Apply Custom CSS for White Input Text
+    st.markdown("""
+    <style>
+        /* Change text color inside input box */
+        .stTextInput > div > div > input {
+            color: white !important;
+        }
+    </style>
+""", unsafe_allow_html=True)
     st.header("Student Login")
     student_id = st.text_input("Enter Your Student ID")
     login_button = st.button("Login")
@@ -607,10 +617,10 @@ elif choice == "Student Portal":
         <div class="marks-box">
             {' '.join(result_lines)}
             <hr>
-            <b><span style='color: #ff0094;'>Total:</b> {total_obtained}/{total_max}<br>
-            <b><span style='color: #ff0094;'>Percentage:</b> {percentage:.2f}%<br>
-            <b><span style='color: #ff0094;'>Result:</b> {result}
-            <b><span style='color: #ff0094;'>Position:</span></b> {student_info.get('Position', 'Not Assigned')}
+            <b><span style='color: #ff0041;'>Total:</b> {total_obtained}/{total_max}<br>
+            <b><span style='color: #ff0041;'>Percentage:</b> {percentage:.2f}%<br>
+            <b><span style='color: #ff0041;'>Result:</b> {result}</b>
+            <b><span style='color: #ff0041;'>Position:</span></b> {student_info.get('Position', 'Not Assigned')}
         </div>
     """, unsafe_allow_html=True)
                 # ✅ Download Result Button
