@@ -122,8 +122,56 @@ if "students" not in st.session_state:
                     "TAJWEED": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}},
                     "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
                 }
+
+                
+            },
+             {
+                "ID": "8dtq002",
+                "Name": "Basharat Ayoub ",
+                "Parentage": "Mohammad Ayoub Bhat",
+                "Age": 16,
+                "Gender": "Male",
+                "Class": "8TH",
+                "Position":"SECOND",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 20, "Max": 30}, "Term 2": {"Obtained": 24, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 19, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 22, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 15, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}},
+                    "SEERAT": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 23, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 26, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
                
             },
+
+
+            {
+                "ID": "8dtq003",
+                "Name": "Muqadas Shabaan ",
+                "Parentage": "Mohammad Shabaan Ganaie",
+                "Age": 16,
+                "Gender": "Male",
+                "Class": "8TH",
+                "Position":"SECOND",
+
+                "Marks": {
+                    "QURAN": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "FIQH": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 28, "Max": 30}},
+                    "HADEES": {"Term 1": {"Obtained": 30, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "ADAABI-ZINDAGI": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "USMAL-HUSNA": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "SEERAT": {"Term 1": {"Obtained": 24, "Max": 30}, "Term 2": {"Obtained": 25, "Max": 30}},
+                    "DUA": {"Term 1": {"Obtained": 25, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "TAJWEED": {"Term 1": {"Obtained": 29, "Max": 30}, "Term 2": {"Obtained": 30, "Max": 30}},
+                    "BEHAVIOUR/ATTENDANCE": {"Term 1": {"Obtained": 27, "Max": 30}, "Term 2": {"Obtained": 27, "Max": 30}}
+                }
+               
+            },
+            
             {
                 "ID": "102",
                 "Name": "Ayesha Siddiqui",
