@@ -492,7 +492,20 @@ if choice == "Home":
         .top-performers-text {
             display: inline-block;
             padding-left: 100%;
-            animation: scroll-text 20s linear infinite; /* Increased duration from 10s to 20s */
+            animation: scroll-text 28s linear infinite; /* Increased duration from 10s to 20s */
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        /* Animation for scrolling text */
+        @keyframes scroll-text {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+       .top-performers-text1 {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-text 28s linear infinite; /* Increased duration from 10s to 20s */
             font-size: 22px;
             font-weight: bold;
         }
@@ -512,7 +525,7 @@ if choice == "Home":
         </div>
         
         <div class="top-performers-container">
-            <span class="top-performers-text">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, TOIBA RASHID 🎓   May success, happiness, and wisdom follow you wherever you go.</span>
+            <span class="top-performers-text1">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, TOIBA RASHID 🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
       
         </div>
