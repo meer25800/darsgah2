@@ -571,8 +571,9 @@ elif choice == "Student Portal":
                     total_obtained += term1_obtained + term2_obtained
                     total_max += term1_max + term2_max
 
+                     # ✅ Format Marks as Separate Lines
                     result_lines.append(
-                        f"{subject}\n  - Term 1: {term1_obtained}/{term1_max}\n  - Term 2: {term2_obtained}/{term2_max}\n"
+                        f"<b>{subject}</b><br>  - Term 1: {term1_obtained}/{term1_max}<br>  - Term 2: {term2_obtained}/{term2_max}<br><br>"
                     )
 
                 percentage = (total_obtained / total_max) * 100
@@ -595,6 +596,7 @@ elif choice == "Student Portal":
             st.error("Student ID not found. Please try again.")
 
 #student
+
 #student portal
 
             # Admin Portal
