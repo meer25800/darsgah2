@@ -488,7 +488,7 @@ if choice == "Home":
             .top-performers-text {
                 display: inline-block;
                 padding-left: 100%;
-                animation: scroll-text 10s linear infinite;
+                animation: scroll-text 25s linear infinite;
                 font-size: 22px;
                 font-weight: bold;
             }
