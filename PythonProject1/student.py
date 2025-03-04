@@ -831,7 +831,7 @@ elif choice == "Passout 2024":
             }
             .passout-list-container h3 {
                 color: #ffeb3b;
-                margin-right:-10px;
+                
                 text-align: center;
             }
             .passout-list-container ul {
@@ -938,7 +938,7 @@ elif choice == "Topper List":
                 width: 100%;
                 border-collapse: collapse;
                 margin-top: 20px;
-                margin-left:-10px;
+                margin-left:-20px;
                 
             }
             .topper-table th, .topper-table td {
