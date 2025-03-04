@@ -515,10 +515,23 @@ if choice == "Home":
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
+         .top-performers-text2 {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll-text 15s linear infinite; /* Increased duration from 10s to 20s */
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        /* Animation for scrolling text */
+        @keyframes scroll-text {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
 
         </style>
          <div class="top-performers-container">
-            <span class="top-performers-text">🏆 Conguralations To  Darsgah Toppers (YEAR 2024) :  TOIBA RASHID, NAZIMA MUSHTAQ AND MUQADAS SHABAAN 🏆</span>
+            <span class="top-performers-text2">🏆 Conguralations To  Darsgah Toppers (YEAR 2024) :  TOIBA RASHID, NAZIMA MUSHTAQ AND MUQADAS SHABAAN 🏆</span>
            
      
         </div>
