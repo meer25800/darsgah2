@@ -831,6 +831,7 @@ elif choice == "Passout 2024":
             }
             .passout-list-container h3 {
                 color: #ffeb3b;
+                margin-right:-10px;
                 text-align: center;
             }
             .passout-list-container ul {
