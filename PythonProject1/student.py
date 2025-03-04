@@ -519,13 +519,13 @@ if choice == "Home":
         </style>
        
         <div class="top-performers-container">
-            <span class="top-performers-text">🏆 Top Performers of the Year: A, B, C, D, E 🏆</span>
+            <span class="top-performers-text">🏆 Top Performers of the Year: MUQADAS SHABAAN, TOIBA RASHID, ZEHRAT-UL-NISA,IQRA MOHI-UD-DIN, SADIA FAROOQ AND KASHIF HILAL 🏆</span>
            
      
         </div>
         
         <div class="top-performers-container">
-            <span class="top-performers-text1">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, TOIBA RASHID 🎓   May success, happiness, and wisdom follow you wherever you go.</span>
+            <span class="top-performers-text1">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, MUNTAZIR BASHIR AND BILAWAL FAYAZ  🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
       
         </div>
@@ -822,7 +822,8 @@ elif choice == "Passout 2024":
                 <li>Basharat Ayoub</li>
                 <li>Faheem-ul-Islam</li>
                 <li>Muqadas Shabaan</li>
-                <li>Toiba Rashid</li>
+                <li>Muntazir Bashir</li>
+                <li>Bilawal Fayaz</li>
                 
             
         </div>
