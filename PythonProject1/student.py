@@ -949,6 +949,9 @@ elif choice == "Topper List":
             .topper-table tr:nth-child(even) {
                 background: #3f51b5;
             }
+            .topper-table tr:nth-child(odd) {
+                background:#283593;
+            }
         </style>
         <div class="topper-list-container">
             <h3>🏆 Top Performers of the Year 🏆</h3>
