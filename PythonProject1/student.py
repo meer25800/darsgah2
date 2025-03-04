@@ -938,7 +938,7 @@ elif choice == "Topper List":
                 width: 100%;
                 border-collapse: collapse;
                 margin-top: 20px;
-                margin-left:-20px;
+                margin-left:-15px;
                 
             }
             .topper-table th, .topper-table td {
