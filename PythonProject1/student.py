@@ -528,10 +528,20 @@ if choice == "Home":
             0% { transform: translateX(100%); }
             100% { transform: translateX(-100%); }
         }
-
+      .top-performers-container1 {
+                text-align: center;
+                overflow: hidden;
+                white-space: nowrap;
+                background: #be5f25;
+                color: blue;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                margin-top: 20px;
+            }
         </style>
-         <div class="top-performers-container">
-            <span class="top-performers-text2">🏆 Conguralations To  Darsgah Toppers (YEAR 2024) :  TOIBA RASHID, NAZIMA MUSHTAQ AND MUQADAS SHABAAN 🏆</span>
+         <div class="top-performers-container1">
+            <span class="top-performers-text2">🏆 Conguralations To  Darsgah Toppers (Year 2024) :  TOIBA RASHID, NAZIMA MUSHTAQ AND MUQADAS SHABAAN 🏆</span>
            
      
         </div>
@@ -542,7 +552,7 @@ if choice == "Home":
      
         </div>
         
-        <div class="top-performers-container">
+        <div class="top-performers-container1">
             <span class="top-performers-text1">🎓 Passout Students (2024): AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, MUNTAZIR BASHIR AND BILAWAL FAYAZ  🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
       
