@@ -979,10 +979,94 @@ elif choice == "Topper List":
                     <td>6TH</td>
                 </tr>
                 <tr>
-                    <td>Ulfat Gulzar/td>
+                    <td>Ulfat Gulzar</td>
                     <td>87.41</td>
                     <td>Third</td>
                     <td>6TH</td>
+                </tr>
+                <tr>
+                    <td>Iqra Mohi-ud-din </td>
+                    <td>NA</td>
+                    <td>First</td>
+                    <td>5TH</td>
+                </tr>
+                <tr>
+                    <td>Furqaan Haneef</td>
+                    <td>NA</td>
+                    <td>Second</td>
+                    <td>5TH</td>
+                </tr>
+                <tr>
+                    <td>Sadia Fayaz</td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>5TH</td>
+                </tr>
+                <tr>
+                    <td>Afreena Hilal </td>
+                    <td>NA</td>
+                    <td>First</td>
+                    <td>4TH</td>
+                </tr>
+                <tr>
+                    <td>Talib-bin- Showkat</td>
+                    <td>NA</td>
+                    <td>Second</td>
+                    <td>4TH</td>
+                </tr>
+                <tr>
+                    <td>Burhan Javid</td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>4TH</td>
+                </tr>
+                <tr>
+                    <td>Wajahat Iqbal</td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>4TH</td>
+                </tr>
+                <tr>
+                    <td>Sadia Farooq</td>
+                    <td>NA</td>
+                    <td>FIrst</td>
+                    <td>3RD</td>
+                </tr>
+                <tr>
+                    <td>Mahira Muzamil</td>
+                    <td>NA</td>
+                    <td>Second</td>
+                    <td>3RD</td>
+                </tr>
+                <tr>
+                    <td>Sana Javid</td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>3RD</td>
+                </tr>
+                <tr>
+                    <td>Kashif Hila</td>
+                    <td>NA</td>
+                    <td>FIrst</td>
+                    <td>2ND</td>
+                </tr>
+                <tr>
+                    <td>Riyan Mushtaq</td>
+                    <td>NA</td>
+                    <td>Second</td>
+                    <td>2ND</td>
+                </tr>
+                <tr>
+                    <td>Mohammad Taha </td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>2ND</td>
+                </tr>
+                 <tr>
+                    <td>Sidrat-ul-Muntaha </td>
+                    <td>NA</td>
+                    <td>Third</td>
+                    <td>2ND</td>
                 </tr>
     """, unsafe_allow_html=True)
 
