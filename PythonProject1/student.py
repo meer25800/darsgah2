@@ -932,13 +932,13 @@ elif choice == "Topper List":
             .topper-list-container h3 {
                 color: #ffeb3b;
                 text-align: center;
-                background:green;
+                
             }
             .topper-table {
                 width: 100%;
                 border-collapse: collapse;
                 margin-top: 20px;
-                margin-left:10px;
+                margin-left:-10px;
                 
             }
             .topper-table th, .topper-table td {
