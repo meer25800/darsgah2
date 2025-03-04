@@ -517,15 +517,20 @@ if choice == "Home":
         }
 
         </style>
+         <div class="top-performers-container">
+            <span class="top-performers-text">🏆 Conguralations To  Darsgah Toppers (YEAR 2024) :  TOIBA RASHID, NAZIMA MUSHTAQ AND MUQADAS SHABAAN 🏆</span>
+           
+     
+        </div>
        
         <div class="top-performers-container">
-            <span class="top-performers-text">🏆 Top Performers of the Year: MUQADAS SHABAAN, TOIBA RASHID, ZEHRAT-UL-NISA,IQRA MOHI-UD-DIN, SADIA FAROOQ AND KASHIF HILAL 🏆</span>
+            <span class="top-performers-text">🏆 Conguralations To  Top Performers of the Year (2024): MUQADAS SHABAAN, TOIBA RASHID, ZEHRAT-UL-NISA,IQRA MOHI-UD-DIN, SADIA FAROOQ AND KASHIF HILAL 🏆</span>
            
      
         </div>
         
         <div class="top-performers-container">
-            <span class="top-performers-text1">🎓 Passout Students: AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, MUNTAZIR BASHIR AND BILAWAL FAYAZ  🎓   May success, happiness, and wisdom follow you wherever you go.</span>
+            <span class="top-performers-text1">🎓 Passout Students (2024): AFTAB SHABIR, BASHARAT AYOUB, FAHEEM-UL-ISLAM, ARSALAN FAYAZ, MUQADAS SHABAAN, MUNTAZIR BASHIR AND BILAWAL FAYAZ  🎓   May success, happiness, and wisdom follow you wherever you go.</span>
            
       
         </div>
