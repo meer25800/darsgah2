@@ -1158,31 +1158,55 @@ elif choice == "Annual Programme":
                 </tr>
                 <tr>
                     <td>Quran Recitation</td>
-                    <td>Ahmed Khan</td>
+                    <td>Furqaan Haneef</td>
                 </tr>
                 <tr>
                     <td>Naat</td>
-                    <td>Fatima Noor</td>
-                </tr>
-                <tr>
-                    <td>Nazm</td>
-                    <td>Ayesha Siddiqui</td>
+                    <td>Toiba Rashid</td>
                 </tr>
                 <tr>
                     <td>Dars-e-Quran</td>
-                    <td>Ali Raza</td>
+                    <td>Muqadas Shabaan</td>
                 </tr>
                 <tr>
-                    <td>Dars-Hadees</td>
-                    <td>Sara Ahmed</td>
+                    <td>Class 4th Boys</td>
+                    <td>Chahal Hadees</td>
                 </tr>
                 <tr>
-                    <td>Hadees</td>
-                    <td>Zainab Fatima</td>
+                    <td>Naat</td>
+                    <td>Maroofa Rashid</td>
                 </tr>
                 <tr>
-                    <td>General Topics</td>
-                    <td>Usman Ali</td>
+                    <td>Topic</td>
+                    <td>Nazima Mushtaq</td>
+                </tr>
+                <tr>
+                    <td>Nazm</td>
+                    <td>Basharat Ayoub</td>
+                </tr>
+                <tr>
+                    <td>Tilawat & Translation</td>
+                    <td>Yahya Yousuf & Zuhaib Shafi</td>
+                </tr>
+                <tr>
+                    <td>Naat</td>
+                    <td>Class 4th Girls</td>
+                </tr>
+                <tr>
+                    <td>Tazkeer bil Hadees</td>
+                    <td>Aftab Shabir</td>
+                </tr>
+                <tr>
+                    <td>Topic</td>
+                    <td>Zehra-tun-Nisa</td>
+                </tr>
+                <tr>
+                    <td>Naat</td>
+                    <td>Taha Fayaz</td>
+                </tr>
+                <tr>
+                    <td>Seerat</td>
+                    <td>Kashif & Taha</td>
                 </tr>
             </table>
         </div>
